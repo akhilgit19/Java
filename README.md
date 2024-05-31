@@ -7,7 +7,14 @@
 
 
 
-3) akhilpagadapoola@Akhils-MacBook-Air Documents % ls
+3)public class HelloWorld{
+
+public static void main(String[] args) {
+   System.out.println("Hello World!!!");
+}
+}
+
+akhilpagadapoola@Akhils-MacBook-Air Documents % ls
 Hello.java			Pay Slips
 HelloWorld.java			aws
 Hibernate error doc.txt		git.txt
@@ -20,5 +27,6 @@ Hibernate new error doc.txt	ias.txt
 Pay Slips
 akhilpagadapoola@Akhils-MacBook-Air Documents % javac HelloWorld.java
 akhilpagadapoola@Akhils-MacBook-Air Documents % java HelloWorld
+Hello World!!!
 
 
