@@ -3,7 +3,7 @@
 1)WHO WILL TRANSLATE SYSTEM TO MACHINE LEVEL?
   -COMPILER + INTERPRETER.
 
-2)HELLO.JAVA ----COMPILIER-->HELLO.CLASS(BYTE  code which is neither machine or understandable code)-- Machine
+2)HELLO.JAVA ----COMPILIER-->HELLO.CLASS(BYTE  code which is neither machine or understandable code)-- Machine-- interpreter intepretes line by   line in the machine.
 
 
 
