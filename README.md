@@ -24,3 +24,18 @@ akhilpagadapoola@Akhils-MacBook-Air Documents % java HelloWorld
 Hello World!!!
 
 
+4) JDK- JAVA DEVELOPMENT KIT- JDK is combinatioon of JRE and Dev tools-java compilier, java debugger, java doc
+5) JRE- JAVA RUNTIME ENVIRONMENT- JRE is combination of JVM + Runtime libraries
+6) JVM- JAVA VIRTUAL MACHINE
+
+                 (jdk --compiler)                         JVM+JRE
+7)HelloWorld.java----------->HelloWorld.class (bytecode)------------> JVM Input which reads code line by line and converst to machine understandable
+
+
+INPUT TO JVM---->CLASSLOADER---METHOD AREA,HEAP AREA,Stack Memory,Program Counter
+
+METHOD AREA - contains class data
+HEAP AREA-- contains objects
+STACK MEMORY- Local variables are stores in stack memory
+Program Counter- cuurent execution next execution status
+Native Method- 
