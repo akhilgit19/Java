@@ -15,12 +15,6 @@ public static void main(String[] args) {
 }
 
 akhilpagadapoola@Akhils-MacBook-Air Documents % ls
-Hello.java			Pay Slips
-HelloWorld.java			aws
-Hibernate error doc.txt		git.txt
-Hibernate new error doc.txt	ias.txt
-akhilpagadapoola@Akhils-MacBook-Air Documents % rm -r Hello.java
-akhilpagadapoola@Akhils-MacBook-Air Documents % ls
 HelloWorld.java			aws
 Hibernate error doc.txt		git.txt
 Hibernate new error doc.txt	ias.txt
