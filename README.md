@@ -29,13 +29,17 @@ Hello World!!!
 6) JVM- JAVA VIRTUAL MACHINE
 
                  (jdk --compiler)                         JVM+JRE
-7)HelloWorld.java----------->HelloWorld.class (bytecode)------------> JVM Input which reads code line by line and converst to machine understandable
+7)HelloWorld.java----------->HelloWorld.class (bytecode)------------> INPUT TO JVM---->CLASSLOADER---METHOD AREA,HEAP AREA,Stack Memory,Program Counter------------>(Execution Engine)--->interpreter(reads code line by line--> JIT (Just in time compiler) IF repeated methods it quickly compile-- Garbage collector----JNI(Java Native interface).
 
-
-INPUT TO JVM---->CLASSLOADER---METHOD AREA,HEAP AREA,Stack Memory,Program Counter
-
-METHOD AREA - contains class data
+METHOD AREA - contains class datax
 HEAP AREA-- contains objects
 STACK MEMORY- Local variables are stores in stack memory
 Program Counter- cuurent execution next execution status
-Native Method- 
+Native Method- We can run other programing langagues 
+
+
+
+
+
+
+
