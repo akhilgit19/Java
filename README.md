@@ -38,7 +38,9 @@ Program Counter- cuurent execution next execution status
 Native Method- We can run other programing langagues 
 
 
-
+InterviewQuestion Note:
+1.You can compile a java code without a main method.
+2.You cannot run a java code without a main method.
 
 
 
