@@ -42,5 +42,17 @@ InterviewQuestion Note:
 2.You cannot run a java code without a main method.
 
 
+package com; //optional
+
+import ...;// on demand
+
+class HelloWorld {
+//var
+//methods: set of instructions
+//constructor
+//blocks
+
+}
+
 
 
