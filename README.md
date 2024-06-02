@@ -13,7 +13,6 @@ public static void main(String[] args) {
    System.out.println("Hello World!!!");
 }
 }
-
 akhilpagadapoola@Akhils-MacBook-Air Documents % ls
 HelloWorld.java			aws
 Hibernate error doc.txt		git.txt
