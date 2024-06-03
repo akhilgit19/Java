@@ -56,3 +56,13 @@ class HelloWorld {
 
 
 
+public static void main(String args []){
+}
+
+public- Access specifier
+static- keyword
+void- return type
+main- method name
+String args[] - Array of string type
+
+
