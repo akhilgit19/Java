@@ -165,6 +165,9 @@ public class ScannerDemo {
 		
 		System.out.println("Please enter char value");
 		char c = so.nextLine().charAt(i);
+
+                System.out.println("Please enter string value");
+		String str=so.nextLine();
 				
 		
 		
