@@ -130,7 +130,6 @@ public class DataTypesDemo {
 Scanner
 =========
 
-
 package com.flm.identifiersdemo;
 
 import java.util.Scanner;
@@ -140,39 +139,48 @@ public class ScannerDemo {
 	public static void main(String[] args) {
 		
 		
-		
-		Scanner so = new Scanner(System.in);
-		System.out.println("Please enter byte value");
-		byte b = so.nextByte();
-		
-		System.out.println("Please enter short value");
-		short s=so.nextShort();
-		
-		System.out.println("Please enter int value");
-		int i = so.nextInt();
-		
-		System.out.println("Please enter long value");
-		long l = so.nextLong();
-		
-		System.out.println("Please enter double value");
-		double d =so.nextDouble();
-		
-		System.out.println("Please enter float value");
-		float f=so.nextFloat();
-		
-		System.out.println("Please enter boolean value");
-		boolean bool=so.hasNextBoolean();
-		
-		System.out.println("Please enter char value");
-		char c = so.nextLine().charAt(i);
+		   Scanner so = new Scanner(System.in);
+	        System.out.println("Please enter byte value");
+	        byte b = so.nextByte();
 
-                System.out.println("Please enter string value");
-		String str=so.nextLine();
-				
-		
-		
-		
-		scannerFunction();
+	        System.out.println("Please enter short value");
+	        short s = so.nextShort();
+
+	        System.out.println("Please enter int value");
+	        int i = so.nextInt();
+
+	        System.out.println("Please enter long value");
+	        long l = so.nextLong();
+
+	        System.out.println("Please enter double value");
+	        double d = so.nextDouble();
+
+	        System.out.println("Please enter float value");
+	        float f = so.nextFloat();
+
+	        System.out.println("Please enter boolean value");
+	        boolean bool = so.nextBoolean();
+	        
+	        // Consume the newline character
+	        so.nextLine();
+
+	        System.out.println("Please enter char value");
+	        char c = so.nextLine().charAt(0);
+
+	        System.out.println("Please enter string value");
+	        String str = so.nextLine();
+
+	        System.out.println("Byte value is " + b);
+	        System.out.println("Short value is " + s);
+	        System.out.println("Int value is " + i);
+	        System.out.println("Long value is " + l);
+	        System.out.println("Float value is " + f);
+	        System.out.println("Boolean value is " + bool);
+
+	        System.out.println("Char value is " + c);
+	        System.out.println("String value is " + str);
+
+	        scannerFunction();
 	}
 
 	private static void scannerFunction() {
@@ -196,6 +204,3 @@ public class ScannerDemo {
 		System.out.println("Hello World");
 	}
 }
-
-
-
