@@ -127,6 +127,72 @@ public class DataTypesDemo {
 	
 }
 
+Scanner
+=========
+
+
+package com.flm.identifiersdemo;
+
+import java.util.Scanner;
+
+public class ScannerDemo {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner so = new Scanner(System.in);
+		System.out.println("Please enter byte value");
+		byte b = so.nextByte();
+		
+		System.out.println("Please enter short value");
+		short s=so.nextShort();
+		
+		System.out.println("Please enter int value");
+		int i = so.nextInt();
+		
+		System.out.println("Please enter long value");
+		long l = so.nextLong();
+		
+		System.out.println("Please enter double value");
+		double d =so.nextDouble();
+		
+		System.out.println("Please enter float value");
+		float f=so.nextFloat();
+		
+		System.out.println("Please enter boolean value");
+		boolean bool=so.hasNextBoolean();
+		
+		System.out.println("Please enter char value");
+		char c = so.nextLine().charAt(i);
+				
+		
+		
+		
+		scannerFunction();
+	}
+
+	private static void scannerFunction() {
+		//Java is a object oriented language OOP
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Welcome to MIT Solutions");
+	    System.out.println("Please enter a value");
+        int a =s.nextInt();
+        System.out.println("Please enter b value");
+        int b = s.nextInt();
+        
+        int result = a+ b;
+        System.out.println(result);
+		
+		helloWorld();
+	}
+
+	private static void helloWorld() {
+		System.out.println("Hello World");
+	}
+}
 
 
 
