@@ -338,3 +338,39 @@ public class OperatorsDemo {
 		boolean r6 = (a<=b);//true
 		System.out.println(r6);
 	}
+
+
+Terinary Operators:
+====================
+
+
+package com.flm.identifiersdemo;
+
+import java.util.Scanner;
+public class OperatorsDemo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter your first no : ");
+		int a = sc.nextInt();
+		
+		System.out.println("Enter your second no : ");
+		int b = sc.nextInt();
+		
+		System.out.println("Enter your third no : ");
+		int c = sc.nextInt();
+		
+//		int a=100;
+//		int b=20;
+		
+	   int highestNumber = (a>b)? ((a>c)? a:c):((b>c)? b:c);
+	   
+//	   int highestNumber = (a>b) && (a>c)? a: (b>c)? b:c;
+	   
+	   System.out.println("highestNumber "+ highestNumber);
+	   
+		
+ 	
+	}
