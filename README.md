@@ -432,3 +432,164 @@ public class CondtionalStatements {
 		System.out.println("game over");
 	}
 }
+
+
+BreakStatement:
+===================
+
+
+package com.flm.identifiersdemo;
+
+import java.util.Scanner;
+
+public class CondtionalStatements {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("Enter fav day");
+		int favDay=sc.nextInt();
+		
+		switch(favDay) {
+		
+		case 1: {
+			System.out.println("Nee fav day sunday");
+			break;
+		}
+		
+		case 2: {
+			System.out.println("Nee fav day moday");
+			break;
+		}
+		
+		case 3: {
+			System.out.println("Nee fav day tueday");
+			break;
+		}
+		
+		case 6: {
+			System.out.println("Nee fav day friday");
+			break;
+		}
+		
+		default :{
+			System.out.println("Every day is same");
+		}
+		
+	  }
+		
+		
+	}
+
+Else ifstatement:
+=======================
+
+	private static void elseIFStatements() {
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("Enter marks");
+		int marks = sc.nextInt();
+		
+		if(marks >=90 && marks <=100) {
+			System.out.println("Neeku a grade");
+		}
+		
+		else if(marks >=75 && marks<90) {
+			System.out.println("Neeku b grade");
+		}
+		else if(marks >=60 && marks <75) {
+			System.out.println("Neeku c grade");
+		}
+		else {
+			System.out.println("Oops");
+		}
+	}
+
+Nestedifelse statement:
+===========================
+
+	private static void nestedIfElseStatements() {
+		int a=74;
+		if(a>50 ) {
+			if(a>=75) {
+				System.out.println("a is above 50 and below 100");;
+			}
+			else {
+				if(a==75) {
+					System.out.println("a val is 75");
+				}
+				else {
+					System.out.println("tada");
+				}
+				
+				System.out.println("Inner if else block");
+			}
+		}
+	}
+
+String Address Comparision
+==============================
+	private static void stringAdressComparision() {
+		String su1="akhil";
+		String sp1="123";
+		
+//		
+//		String su2="akhil";
+//		String sp2="123";
+//		
+//		if((su1==su2)&& (sp1==sp2)){
+//			System.out.println("welcome");
+//		}
+//		System.out.println("over");
+		
+		
+		Scanner sc = new Scanner(System.in);		
+		System.out.println("Enter your username");
+		String su2 = sc.nextLine();
+		System.out.println("Enter your password");
+		String sp2= sc.nextLine();
+		
+		
+		
+		if((su1.equals(su2))&&(sp1.equals(sp2))) {
+			System.out.println("Welcome to instagram");
+		}
+		System.out.println("game over");
+	}
+
+
+EvenorOdd program
+======================
+	private static void evenOrOddProgram() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Even or odd program");
+		
+		
+		System.out.println("Enter your a even");
+		int a= sc.nextInt();
+		
+		int reminder = a%2;
+		boolean isEven =reminder ==0;
+		
+		if(isEven) {
+			System.out.println("Given no:" +a+ " is even");
+			
+		}
+		
+		System.out.println("Enter your a odd no");
+		int b=sc.nextInt();
+		
+		if(b%2==0) {
+			System.out.println("given no: "+b+" is even");
+		}
+		else {
+			System.out.println("given no: "+b+" is odd");
+		}
+		System.out.println("game over");
+	}
+}
+
+
+
