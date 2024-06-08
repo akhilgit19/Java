@@ -374,3 +374,61 @@ public class OperatorsDemo {
 		
  	
 	}
+
+
+Conditional Statements
+=========================
+
+package com.flm.identifiersdemo;
+
+import java.util.Scanner;
+
+public class CondtionalStatements {
+
+	public static void main(String[] args) {
+		
+		String su1="akhil";
+		String sp1="123";
+		
+		Scanner sc = new Scanner(System.in);		
+		System.out.println("Enter your username");
+		String su2 = sc.nextLine();
+		System.out.println("Enter your password");
+		String sp2= sc.nextLine();
+		
+		
+		
+		if((su1.equals(su2))&&(sp1.equals(sp2))) {
+			System.out.println("Welcome to instagram");
+		}
+		System.out.println("game over");
+	}
+
+	private static void evenOrOddProgram() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Even or odd program");
+		
+		
+		System.out.println("Enter your a even");
+		int a= sc.nextInt();
+		
+		int reminder = a%2;
+		boolean isEven =reminder ==0;
+		
+		if(isEven) {
+			System.out.println("Given no:" +a+ " is even");
+			
+		}
+		
+		System.out.println("Enter your a odd no");
+		int b=sc.nextInt();
+		
+		if(b%2==0) {
+			System.out.println("given no: "+b+" is even");
+		}
+		else {
+			System.out.println("given no: "+b+" is odd");
+		}
+		System.out.println("game over");
+	}
+}
