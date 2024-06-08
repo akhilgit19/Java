@@ -30,7 +30,7 @@ Hello World!!!
                  (jdk --compiler)                         JVM+JRE
 7)HelloWorld.java----------->HelloWorld.class (bytecode)------------> INPUT TO JVM---->CLASSLOADER---METHOD AREA,HEAP AREA,Stack Memory,Program Counter------------>(Execution Engine)--->interpreter(reads code line by line--> JIT (Just in time compiler) IF repeated methods it quickly compile-- Garbage collector----JNI(Java Native interface).
 
-METHOD AREA - contains class datax
+METHOD AREA - contains class data
 HEAP AREA-- contains objects
 STACK MEMORY- Local variables are stores in stack memory
 Program Counter- cuurent execution next execution status
@@ -204,3 +204,90 @@ public class ScannerDemo {
 		System.out.println("Hello World");
 	}
 }
+
+
+
+
+
+LOGICAL OPERATORS
+====================
+
+package com.flm.identifiersdemo;
+
+import java.util.Scanner;
+public class OperatorsDemo {
+
+	public static void main(String[] args) {
+		
+	
+		boolean b1=false;
+		boolean b2=true;
+		
+		System.out.println(b1 || b2); //true
+		System.out.println(!b1); //true
+		System.out.println((b1 && b2) || (b2 || b1));//true
+ 	
+	}
+
+	private static void preIncrementAndPostIncrement() {
+		// pre increment and post increment 
+		
+		int a=10;
+		
+		System.out.println(++a);//11
+		System.out.println(a++);//11
+		System.out.println(a);//12
+		System.out.println(--a);//11
+		System.out.println(a--);//11
+		System.out.println(a);//10
+	}
+
+	private static void swappingOfTwoNumbers() {
+		Scanner s = new Scanner(System.in);
+		
+//		int a=10;
+//		int b=20;
+//		
+//		a+=b; //a=a+b
+//		a-=b; //a=a-b
+//		System.out.println("Res "+a);
+		
+		//swapping of two variables first logic
+//	int a=10;
+//	int b=20;
+//	int c=a;
+//	a=b;
+//	b=c;
+//	System.out.println(a);
+//	System.out.println(b);
+	
+	// second logic for swapping of two variables first logic
+		int a=10;
+		int b=20;
+	
+     a=a+b;
+     b=a-b;
+     a=a-b;
+     
+ 	System.out.println(a);
+ 	System.out.println(b);
+	}
+
+	private static void arthOperators() {
+		Scanner sc = new Scanner(System.in);
+		//+ - * / %
+		
+		System.out.println("Enter your first no: ");
+		int a=sc.nextInt();
+		System.out.println("Enter your second no: ");
+		int b=sc.nextInt();
+		
+		int sum = a+b;
+		
+		System.out.println("Sum of two numbers "+sum);
+		System.out.println("Sub of two number "+(a-b));
+		System.out.println("mul of two numbers "+ (a*b));
+		System.out.println("div of two numbers "+(a/b));
+	}
+}
+
