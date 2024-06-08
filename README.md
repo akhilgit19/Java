@@ -38,6 +38,7 @@ Native Method- We can run other programing langagues
 
 
 InterviewQuestion Note:
+=========================
 1.You can compile a java code without a main method.
 2.You cannot run a java code without a main method.
 
@@ -228,7 +229,8 @@ public class OperatorsDemo {
 		System.out.println((b1 && b2) || (b2 || b1));//true
  	
 	}
-
+PredIncrement and PostIncrement:
+=====================================
 	private static void preIncrementAndPostIncrement() {
 		// pre increment and post increment 
 		
@@ -242,6 +244,8 @@ public class OperatorsDemo {
 		System.out.println(a);//10
 	}
 
+Swapping of Two Numbers:
+===========================
 	private static void swappingOfTwoNumbers() {
 		Scanner s = new Scanner(System.in);
 		
@@ -273,6 +277,9 @@ public class OperatorsDemo {
  	System.out.println(b);
 	}
 
+Arthimetic Operators:
+======================
+
 	private static void arthOperators() {
 		Scanner sc = new Scanner(System.in);
 		//+ - * / %
@@ -291,3 +298,43 @@ public class OperatorsDemo {
 	}
 }
 
+
+Relation Operators:
+======================
+
+package com.flm.identifiersdemo;
+
+import java.util.Scanner;
+public class OperatorsDemo {
+
+	public static void main(String[] args) {
+		
+	
+		relationOperators();
+			
+		
+ 	
+	}
+
+	private static void relationOperators() {
+		int a=10;
+		int b=20;
+		
+		boolean r1 = !(a==b);// true
+		System.out.println(r1);
+				
+		boolean r2 = (a!=b);//true
+		System.out.println(r2);
+		
+		boolean r3 = (a>b);//false
+		System.out.println(r3);
+		
+		boolean r4 = (a<b);//true
+		System.out.println(r4);
+		
+		boolean r5 = (a>=b);//false
+		System.out.println(r5);
+		
+		boolean r6 = (a<=b);//true
+		System.out.println(r6);
+	}
