@@ -592,4 +592,73 @@ EvenorOdd program
 }
 
 
+Looping statements:
+=======================
+package com.flm.identifiersdemo;
+
+public class WhileloopDemo {
+
+	public static void main(String[] args) {
+		
+		
+		whileLoopDemo();
+		
+		for(int z=1;z<=3;z++) {
+			System.out.println("Evening");
+		}
+		
+		
+	}
+
+	private static void whileLoopDemo() {
+		int i=5; /// Initialize
+		
+		while(i >= 1) { //Condition
+			System.out.println("Good Morning  "+ i);
+			i--; //Update
+		}
+		
+	   int j=1; /// Initialize
+		
+		while(j<=5) { //Condition
+			System.out.println("Good Evenin  "+ j);
+			j++; //Update
+		}
+		
+		
+		int l=1;
+		while (l<=10) {
+			if(l% 2 == 0) {
+				System.out.println(l);
+			}
+			l++;
+		}
+		
+		int n=95845;
+		int sumOfDigits=0;
+		int temp=95845;
+		
+		while(n>0) {
+			sumOfDigits= sumOfDigits + n%10;
+			n=n/10;
+		}
+	
+	   System.out.println("sumofdigits "+sumOfDigits);
+	   int rem=(temp%9 ==0 ? 9: temp%9);
+	   System.out.println(rem);
+	   
+	   int h =1234;
+	   
+	   int node=0;
+	   
+	   while(h>0) {
+		   h=h/10;
+		   node++;
+		   
+	   }
+
+	   System.out.println("no of digits" +node);
+	}
+}
+
 
