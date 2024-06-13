@@ -414,6 +414,7 @@ public class CondtionalStatements {
 		
 		int reminder = a%2;
 		boolean isEven =reminder ==0;
+  
 		
 		if(isEven) {
 			System.out.println("Given no:" +a+ " is even");
