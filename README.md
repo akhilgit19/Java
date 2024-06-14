@@ -664,4 +664,59 @@ public class WhileloopDemo {
 	}
 }
 
+For Loop:
+=============
+package com.flm.identifiersdemo;
+
+public class ForLoopDemo {
+
+	public static void main(String[] args) {
+		
+		int outerloopvalue =0 ;
+		int innerloopvalue=0;
+		
+		for(int i=1; i<=5;i++) {/// Outer Loop
+	System.out.println(i);
+	outerloopvalue++;
+			for(int j=1; j<=i; j++) {///Inner loop
+				if(j==3) {
+			
+					break;
+				}
+			System.out.println(j);
+			innerloopvalue++;
+				
+			}
+	System.out.println("*********");
+	
+	
+		}
+		System.out.println("outerloopvalue"+outerloopvalue);
+		System.out.println("innerloopvalue"+innerloopvalue);
+	}
+
+	private static void forLoop() {
+		System.out.println("five no using for loop");
+		for(int i=1; i<=5;i++) {
+			System.out.println(i);
+		}
+		
+		System.out.println("five no using for whileloop");
+		int i=1;
+		
+		while(i<=5) {
+			System.out.println(i);
+			i++;
+		}
+		
+		System.out.println(" five no using for dowhileloop");
+		int j=1;
+		
+		do {
+			System.out.println(j);
+			j++;
+		}
+		while(j<=5);
+	}
+}
 
