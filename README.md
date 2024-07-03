@@ -207,7 +207,30 @@ public class ScannerDemo {
 }
 
 
+Scanner next line:
+=====================
 
+package com.flm.identifiersdemo;
+
+import java.util.Scanner;
+
+public class ScannerNextLine {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter your first name");
+		
+		String firstName = s.next();
+		s.nextLine();
+		System.out.println("Enter your second name");
+		String secondName=s.nextLine();
+		
+		System.out.println("Your full name "+ firstName+secondName);
+		
+		
+	}
+}
 
 
 LOGICAL OPERATORS
@@ -719,4 +742,130 @@ public class ForLoopDemo {
 		while(j<=5);
 	}
 }
+
+
+Dowhile loop demo:
+====================
+package com.flm.identifiersdemo;
+
+
+
+public class DoWhileDemo {
+
+	 public static void main(String[] args) {
+	
+		 
+		int i=1;
+		do {
+			System.out.println("inside do while");
+			if(i%2==0) {
+				System.out.println(i);	
+			}
+			i++;
+		}while(i<=10);
+	
+	}
+
+	private static void doWhileLoop() {
+		int i=10;
+		 
+		 do {
+			 System.out.println(i);
+			 i++;
+		 }while(i<5);
+		 
+		 
+		 int j=1;
+		 
+		 while(j<=5) {
+			 System.out.println(j);
+			 j++;
+		 }
+		 
+		 
+
+		 int c=1;
+		 
+		 do {
+			 if(c %2 ==0) {
+				 System.out.println(c);
+			 }
+			 c++;
+		 }while(i<=10);
+	}
+}
+
+
+For loop Demo using break and continue:
+===============================================
+
+package com.flm.identifiersdemo;
+
+public class ForLoopSecondDemo {
+	
+	public static void main(String[] args) {
+		
+		for(int i=1; i<=5; i++) {
+			
+			if(i==3) {
+				continue;
+			}
+			System.out.println(i);
+		}
+	}
+
+}
+
+package com.flm.identifiersdemo;
+
+public class ForLoopSecondDemo {
+	
+	public static void main(String[] args) {
+		
+		for(int i=1; i<=5; i++) {
+			
+			if(i==3) {
+				break;
+			}
+			System.out.println(i);
+		}
+	}
+
+}
+
+Inner and Outer loop using continue in ForLoop:
+==================================================
+package com.flm.identifiersdemo;
+
+public class ForLoopSecondDemo {
+	
+	public static void main(String[] args) {
+		int outerLoop =1;
+		int innerLoop =1;
+		
+		for(int i=1; i<=5; i++) {
+			
+			System.out.println(i);
+			outerLoop++;
+			
+			for(int j=1; j<=i; j++) {
+				
+				if(j==3) {
+					continue;
+				}
+				System.out.println(j);
+				innerLoop++; 
+			}
+			
+			System.out.println("*******");
+			
+		}
+		System.out.println("Outerloop"+outerLoop);
+		System.out.println("InnerLooop"+innerLoop);
+		
+		
+	}
+
+}
+
 
