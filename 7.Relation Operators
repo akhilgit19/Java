@@ -1,0 +1,41 @@
+
+Relation Operators:
+======================
+
+package com.flm.identifiersdemo;
+
+import java.util.Scanner;
+public class OperatorsDemo {
+
+	public static void main(String[] args) {
+		
+	
+		relationOperators();
+			
+		
+ 	
+	}
+
+	private static void relationOperators() {
+		int a=10;
+		int b=20;
+		
+		boolean r1 = !(a==b);// true
+		System.out.println(r1);
+				
+		boolean r2 = (a!=b);//true
+		System.out.println(r2);
+		
+		boolean r3 = (a>b);//false
+		System.out.println(r3);
+		
+		boolean r4 = (a<b);//true
+		System.out.println(r4);
+		
+		boolean r5 = (a>=b);//false
+		System.out.println(r5);
+		
+		boolean r6 = (a<=b);//true
+		System.out.println(r6);
+	}
+
