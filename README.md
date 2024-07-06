@@ -1,4 +1,49 @@
 
+Datatypes:
+============
+
+package com.flm.identifiersdemo;
+
+public class DataTypesDemo {
+
+	public static void main(String[] args) {
+		
+		//integral data types
+		byte b =127;
+		short s =12999;
+		int i =1299999999; //preferred
+		long l=899999999; 
+		
+		//decimal values
+		float f=12.3888888888888888888888888f;
+		double d =123.458687677777777777777777777;//preferred
+		
+		//boolean
+		
+		boolean k =true;
+		boolean k2=false;
+		
+		
+		//char
+		char c='A';
+		char c1=65;
+		
+		
+		
+		System.out.println("Byte value is "+b);
+		System.out.println("Short value is "+s);
+		System.out.println("int  value is "+i);
+		System.out.println("long value is "+l);
+		System.out.println("float value is "+f);
+		System.out.println("double value is "+d);
+		
+		System.out.println("boolean value is "+k);
+		System.out.println("boolean value is "+k2);
+		
+		System.out.println("character value is "+c+c1);
+	}
+	
+}
 
 Scanner
 =========
