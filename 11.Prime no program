@@ -1,0 +1,105 @@
+package com.flm.identifiersdemo;
+
+public class PrimeNumberExample {
+
+	public static void main(String[] args) {
+		
+		
+		
+	
+		
+		
+		
+	}
+
+	private static void case4() {
+		int x=17;
+		int factorCount=0;
+		
+		for(int i=2;i<=x/2;i++) {
+			if(x%i==0) {
+				factorCount++;
+			}
+			
+		}
+		
+		if(factorCount ==0) {
+			System.out.println("Primeno");
+		}
+		else {
+			System.out.println("No a prime no");
+		}
+	}
+
+	private static void case3() {
+		int x=17;
+		int factorCount=0;
+		
+		for(int i=2;i<=x-2;i++) {
+			if(x%i==0) {
+				factorCount++;
+			}
+			
+		}
+		
+		if(factorCount ==0) {
+			System.out.println("Primeno");
+		}
+		else {
+			System.out.println("No a prime no");
+		}
+	}
+
+	private static void case2() {
+		int x=17;
+		int factorCount=0;
+		
+		for(int i=1;i<=x-1;i++) {
+			if(x%i==0) {
+				factorCount++;
+			}
+			
+		}
+		
+		if(factorCount ==1) {
+			System.out.println("Primeno");
+		}
+		else {
+			System.out.println("No a prime no");
+		}
+	}
+
+	private static void secondMethod() {
+		int x=2;
+		int factorCount=0;
+		
+		for(int i=1;i<=x;i++) {
+			if(x%i==0) {
+				factorCount++;
+			}
+			
+		}
+		
+		if(factorCount ==2) {
+			System.out.println("Primeno");
+		}
+		else {
+			System.out.println("No a prime no");
+		}
+		
+		firstMethod();
+	}
+
+	private static void firstMethod() {
+		int x=17;
+		
+		for(int i=1;i<=x;i++) {
+			if(x%i==0) {
+				System.out.println("Prime no"+i);
+			}
+			else {
+				System.out.println("Not a prime no"+i);
+			}
+		}
+	}
+}
