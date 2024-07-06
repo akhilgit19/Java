@@ -1,20 +1,4 @@
 
-
-Identifiers:
-==============
-package com.flm.identifiersdemo;
-
-public class IdentifiersDemo {
-
-	public static void main(String[] args) {
-		
-		int x=10;
-		
-		int a2=250;
-		System.out.println(a2);
-	}
-}
-
 Datatypes:
 ============
 
