@@ -1,0 +1,48 @@
+package com.flm.identifiersdemo;
+
+public class PracticeProblems {
+
+
+	public static void main(String[] args) {
+		
+		
+	 for(int i=1; i<=5; i++) {
+		 
+		 for(int j=1; j<=5; j++) {
+			 System.out.println("*");
+			 
+		 }
+		 System.out.println();
+	 }
+	 
+		
+	}
+
+	private static void reverseOfNumber() {
+		int num =1234;
+		
+		int rev=0;
+		
+		while(num>0) {
+			
+			rev = rev*10 + num%10;
+			num=num/10;
+		}
+		
+		System.out.println(rev);
+	}
+
+	private static void noOfDigits() {
+		//no of digits in a number
+		
+		int xinputNumber=1234;
+		int y=0;
+		
+		while(xinputNumber > 0) {
+			xinputNumber=xinputNumber/10;
+			y++;
+		}
+		
+		System.out.println(y);
+	}
+}
