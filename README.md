@@ -1,10 +1,20 @@
 # Java
 
+1.  1,2,3,4---x==> 2 fc----> x sec
+2.  2,3,4,----x===> 1 fc --> x-1 sec
+3.  2,3,4-----x-1 ====> 0 fc ---> x-2 sec
+4.   100 -> 50   1--------x/2-----------x  ===> x/2 sec
+     50 >   25
+     10 >   5
+     x  >  x/2
+
+5. 1,2,3,5,6,20,15,30 ----->ROOT X
+
+
 1)WHO WILL TRANSLATE SYSTEM TO MACHINE LEVEL?
   -COMPILER + INTERPRETER.
 
-2)HELLO.JAVA ----COMPILIER-->HELLO.CLASS(BYTE  code which is neither machine or understandable code)-- Machine-- interpreter intepretes line by   line in the machine.
-
+2)HELLO.JAVA ----COMPILIER-->HELLO.CLASS(BYTE  code which is neither machine or understandable code and platform independent)-- Machine-- interpreter intepretes line by   line in the machine.
 
 
 3)public class HelloWorld{
@@ -13,6 +23,8 @@ public static void main(String[] args) {
    System.out.println("Hello World!!!");
 }
 }
+
+
 akhilpagadapoola@Akhils-MacBook-Air Documents % ls
 HelloWorld.java			aws
 Hibernate error doc.txt		git.txt
@@ -25,11 +37,13 @@ Hello World!!!
 
 4) JDK- JAVA DEVELOPMENT KIT- JDK is combinatioon of JRE and Dev tools-java compilier, java debugger, java doc
 5) JRE- JAVA RUNTIME ENVIRONMENT- JRE is combination of JVM + Runtime libraries
-6) JVM- JAVA VIRTUAL MACHINE
+6) JVM- JAVA VIRTUAL MACHINE- Class loader subystem+ Memory segement+ Exeuction Engine+ Java native interface and java native libraries
 
                  (jdk --compiler)                         JVM+JRE
 7)HelloWorld.java----------->HelloWorld.class (bytecode)------------> INPUT TO JVM---->CLASSLOADER---METHOD AREA,HEAP AREA,Stack Memory,Program Counter------------>(Execution Engine)--->interpreter(reads code line by line--> JIT (Just in time compiler) IF repeated methods it quickly compile-- Garbage collector----JNI(Java Native interface).
 
+Jvm memory:
+-----------
 METHOD AREA - contains class data
 HEAP AREA-- contains objects
 STACK MEMORY- Local variables are stores in stack memory
