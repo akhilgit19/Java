@@ -1,0 +1,34 @@
+
+package com.flm; //optional
+
+import java.util;// on demand
+
+class HelloWorld {
+//var
+//methods: set of instructions
+//constructor
+//blocks
+
+}
+
+
+public static void main(String args []){
+}
+
+public- Access specifier
+static- keyword
+void- return type
+main- method name
+String args[] - Array of string type
+
+
+package com.fls;
+
+public class B {
+	public static void main(String[] args) {
+		System.out.println("B");
+		
+		System.out.println("C");
+	}
+
+}
