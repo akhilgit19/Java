@@ -57,9 +57,9 @@ InterviewQuestion Note:
 2.You cannot run a java code without a main method.
 
 
-package com; //optional
+package com.flm; //optional
 
-import ...;// on demand
+import java.util;// on demand
 
 class HelloWorld {
 //var
@@ -79,6 +79,19 @@ static- keyword
 void- return type
 main- method name
 String args[] - Array of string type
+
+
+package com.fls;
+
+public class B {
+	public static void main(String[] args) {
+		System.out.println("B");
+		
+		System.out.println("C");
+	}
+
+}
+
 
 Identifiers:
 ==============
