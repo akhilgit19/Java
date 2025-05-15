@@ -1,17 +1,22 @@
+package com.identifiers.flm;
 
-
-Identifiers:
-==============
-package com.flm.identifiersdemo;
-
-public class IdentifiersDemo {
+public class identifiers {
 
 	public static void main(String[] args) {
+		System.out.println("Indentifiers");
 		
 		int x=10;
 		
-		int a2=250;
-		System.out.println(a2);
+		int a2 =256;
+		
+		int A=260;
+		
+		int Number=20;
+		int NUMBER=20; //case 
+		int nUMber=20;
+		
+         System.out.println("A is ="+A);
+		
+		
 	}
 }
-
