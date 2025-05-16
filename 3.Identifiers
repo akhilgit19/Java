@@ -1,9 +1,10 @@
 package com.identifiers.flm;
 
-public class identifiers {
+public class Identifiers {
 
 	public static void main(String[] args) {
-		System.out.println("Indentifiers");
+		System.out.println("Identifiers");
+		
 		
 		int x=10;
 		
@@ -12,11 +13,11 @@ public class identifiers {
 		int A=260;
 		
 		int Number=20;
-		int NUMBER=20; //case 
+		int NUMBER=20; //case sensitive 
 		int nUMber=20;
 		
          System.out.println("A is ="+A);
-		
-		
+         
+         
 	}
 }
