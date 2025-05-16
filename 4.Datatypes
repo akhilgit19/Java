@@ -2,11 +2,15 @@
 Datatypes:
 ============
 
-package com.flm.identifiersdemo;
+package com.datatpes.flm;
 
-public class DataTypesDemo {
+public class Datatypes {
 
 	public static void main(String[] args) {
+		System.out.println("Data types");
+		
+		
+		
 		
 		//integral data types
 		byte b =127;
@@ -28,7 +32,7 @@ public class DataTypesDemo {
 		char c='A';
 		char c1=65;
 		
-		
+		String name ="Updendra";
 		
 		System.out.println("Byte value is "+b);
 		System.out.println("Short value is "+s);
@@ -41,6 +45,10 @@ public class DataTypesDemo {
 		System.out.println("boolean value is "+k2);
 		
 		System.out.println("character value is "+c+c1);
+		
+		System.out.println("String is class in java derived data "+ name);
+		
+		
 	}
-	
 }
+
