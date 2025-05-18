@@ -1,9 +1,8 @@
 
+Scanner:
+==============
 
-Scanner
-=========
-
-package com.flm.identifiersdemo;
+package com.scanner.flm;
 
 import java.util.Scanner;
 
@@ -11,95 +10,93 @@ public class ScannerDemo {
 
 	public static void main(String[] args) {
 		
+		Scanner scannerObject = new Scanner(System.in)  ;
+		System.out.println("Please enter a string value");
+		String str = scannerObject.nextLine();
+		System.out.println("You have enterered : "+ str);
+		char char0 = str.charAt(0);
+		char char1 = str.charAt(1);
+		char char2 = str.charAt(2);
 		
-		   Scanner so = new Scanner(System.in);
-	        System.out.println("Please enter byte value");
-	        byte b = so.nextByte();
 
-	        System.out.println("Please enter short value");
-	        short s = so.nextShort();
+		System.out.println("char0 "+char0);
+		System.out.println("char1 "+char1);
+		System.out.println("char2 "+char2);
+	
 
-	        System.out.println("Please enter int value");
-	        int i = so.nextInt();
-
-	        System.out.println("Please enter long value");
-	        long l = so.nextLong();
-
-	        System.out.println("Please enter double value");
-	        double d = so.nextDouble();
-
-	        System.out.println("Please enter float value");
-	        float f = so.nextFloat();
-
-	        System.out.println("Please enter boolean value");
-	        boolean bool = so.nextBoolean();
-	        
-	        // Consume the newline character
-	        so.nextLine();
-
-	        System.out.println("Please enter char value");
-	        char c = so.nextLine().charAt(0);
-
-	        System.out.println("Please enter string value");
-	        String str = so.nextLine();
-
-	        System.out.println("Byte value is " + b);
-	        System.out.println("Short value is " + s);
-	        System.out.println("Int value is " + i);
-	        System.out.println("Long value is " + l);
-	        System.out.println("Float value is " + f);
-	        System.out.println("Boolean value is " + bool);
-
-	        System.out.println("Char value is " + c);
-	        System.out.println("String value is " + str);
-
-	        scannerFunction();
 	}
+	
+//	dataTypesUsingScanner();
+//    
+//	sumOfTwoIntergersUsingScannerClass();
+//	declerationAndIntialiazationOfVariableMethodDynamically();
+	
 
-	private static void scannerFunction() {
-		//Java is a object oriented language OOP
+	private static void dataTypesUsingScanner() {
+		Scanner scannerObject=new Scanner(System.in);
 		
-		Scanner s = new Scanner(System.in);
-		
-		System.out.println("Welcome to MIT Solutions");
-	    System.out.println("Please enter a value");
-        int a =s.nextInt();
-        System.out.println("Please enter b value");
-        int b = s.nextInt();
+		System.out.println("Please enter byte value");
+		byte b=scannerObject.nextByte();
         
-        int result = a+ b;
-        System.out.println(result);
-		
-		helloWorld();
+		System.out.println("Please enter short value");
+        short nextShort= scannerObject.nextShort();
+        
+        System.out.println("Please enter int value");
+        int intvalue=scannerObject.nextInt();
+        
+        System.out.println("Please enter long value");
+        long l=scannerObject.nextLong();
+        
+        System.out.println("Please enter double value");
+        double d=scannerObject.nextDouble();
+        
+        
+        System.out.println("Please enter float value");
+        float f=scannerObject.nextFloat();
+
+        System.out.println("Please enter boolean value");
+        boolean bool=scannerObject.nextBoolean();
+        
+        System.out.println("Please enter string value");
+        String str=scannerObject.nextLine();
+        
+        System.out.println("Please enter char value");
+        char c=scannerObject.nextLine().charAt(0);
+        
+        
+        System.out.println("Bytevalue" + b);
+        System.out.println("Shortvalue" + nextShort);
+        System.out.println("Int value" + intvalue);
+        System.out.println("Long value" + l);
+        System.out.println("Float value" + f);
+        System.out.println("Double value" + d);
+        System.out.println("Boolean value" + bool);
+        System.out.println("Str value" + str);
+        System.out.println("Char value" + c);
 	}
 
-	private static void helloWorld() {
-		System.out.println("Hello World");
+	private static void sumOfTwoIntergersUsingScannerClass() {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Welcome to MIT Solutions");
+		System.out.println("Please enter A value");
+		int a =sc.nextInt();
+		System.out.println("Please enter b value");
+		int b = sc.nextInt();
+		int result = a+b;
+		System.out.println("Result is : " + result);
+		System.out.println(" Now enter your name");
+		String d= sc.next();
+		System.out.println("Happy Birthday "+ d);
 	}
-}
 
-
-Scanner next line:
-=====================
-
-package com.flm.identifiersdemo;
-
-import java.util.Scanner;
-
-public class ScannerNextLine {
-
-	public static void main(String[] args) {
-		
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter your first name");
-		
-		String firstName = s.next();
-		s.nextLine();
-		System.out.println("Enter your second name");
-		String secondName=s.nextLine();
-		
-		System.out.println("Your full name "+ firstName+secondName);
-		
-		
+	private static void declerationAndIntialiazationOfVariableMethodDynamically() {
+		int k; //declaration of a variable
+		k =99;// initialization
+		int a=10;
+		int b=20;
+		int c=a+b;
+		System.out.println("Result of c is  "+c);
 	}
+	
 }
