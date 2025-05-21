@@ -2,20 +2,78 @@
 Arthimetic Operators:
 ======================
 
-	private static void arthOperators() {
-		Scanner sc = new Scanner(System.in);
-		//+ - * / %
+package com.operators.flm;
+
+import java.util.Scanner;
+
+public class operatorArthimeticOperator {
+
+	//Arthimetic
+	//Relational
+	//Logical
+	//comparision operators
+	// assignment opeerators
+	
+	
+	public static void main(String[] args) {
 		
-		System.out.println("Enter your first no: ");
-		int a=sc.nextInt();
-		System.out.println("Enter your second no: ");
-		int b=sc.nextInt();
+		  
+//		  Scanner scannerObject = new Scanner(System.in);
+//		  
+//		  int a=10;
+//		  int b=20;
+//		  System.out.println(" Before swapping values are");
+//		  System.out.println(" A value is "+a);
+//		  System.out.println(" B value is "+b);
+//		  
+//		  a=a+b;
+//		  b=a-b;
+//		  a=a-b;
+//		  
+//		  System.out.println(" After swapping values are");
+//		  System.out.println(" A value is "+a);
+//		  System.out.println(" B value is "+b);
+		  
+		arthOperators();
 		
-		int sum = a+b;
+		}
+
+		private static void swappingOfTwoVariables() {
+			Scanner scannerObject = new Scanner(System.in);
+			  int a=10;
+			  int b=20;
+			  
+			//  a+=b;
+			//  a-=b;
+			//  a*=b;
+			  
+			  int c=a;
+			  
+			  a=b;
+			  b=c;
+			  
+			  System.out.println("A value is "+a);
+			  System.out.println("B value is "+b);
+			  System.out.println("c value is "+c);
+		}
+
+		private static void arthOperators() {
+			// TODO Auto-generated method stub
+			  // + - * / % ARTHIMETIC OPERATORS
+	      
+		  Scanner scannerObject=new Scanner(System.in); 
+	      System.out.println("Please enter first value");
+	      int a=scannerObject.nextInt();
+	      System.out.println("Please enter second value");
+	      int b=scannerObject.nextInt();
+	       
 		
-		System.out.println("Sum of two numbers "+sum);
-		System.out.println("Sub of two number "+(a-b));
-		System.out.println("mul of two numbers "+ (a*b));
-		System.out.println("div of two numbers "+(a/b));
-	}
+	      int sum=a+b;
+	       
+	      System.out.println("Sum of two numbers   "+sum);
+	      System.out.println("Subraction  "+(a-b));
+	      System.out.println("Multiplication "+(a*b));
+	      System.out.println("Division  "+(a/b));
+	      System.out.println("Reminder  "+(a%b));
+		}
 }
