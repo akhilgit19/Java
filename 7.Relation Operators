@@ -1,41 +1,30 @@
 
 Relation Operators:
 ======================
+package com.operators.flm;
 
-package com.flm.identifiersdemo;
-
-import java.util.Scanner;
-public class OperatorsDemo {
+public class relationOperator {
 
 	public static void main(String[] args) {
-		
-	
-		relationOperators();
-			
-		
- 	
-	}
+		// TODO Auto-generated method stub
 
-	private static void relationOperators() {
 		int a=10;
 		int b=20;
 		
-		boolean r1 = !(a==b);// true
-		System.out.println(r1);
-				
-		boolean r2 = (a!=b);//true
-		System.out.println(r2);
+		boolean r1 = a==b;
+		boolean r2 = a!=b;
+		boolean r3 = a>b;
+		boolean r4 = a>=b;
+		boolean r5 = a<b;
+		boolean r6 = a<=b;
 		
-		boolean r3 = (a>b);//false
-		System.out.println(r3);
 		
-		boolean r4 = (a<b);//true
-		System.out.println(r4);
+		System.out.println((r1));//false
+		System.out.println((r2));//true
+		System.out.println((r3));//false
+		System.out.println((r4));//false
+		System.out.println((r5));//true
+		System.out.println((r6));//true
 		
-		boolean r5 = (a>=b);//false
-		System.out.println(r5);
-		
-		boolean r6 = (a<=b);//true
-		System.out.println(r6);
 	}
-
+}
