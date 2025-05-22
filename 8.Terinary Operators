@@ -2,34 +2,40 @@ Terinary Operators:
 ====================
 
 
-package com.flm.identifiersdemo;
+package com.operators.flm;
 
 import java.util.Scanner;
-public class OperatorsDemo {
+
+public class terrinaryOperator {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner scannerObject = new Scanner(System.in);
 		
-		System.out.println("Enter your first no : ");
-		int a = sc.nextInt();
-		
-		System.out.println("Enter your second no : ");
-		int b = sc.nextInt();
-		
-		System.out.println("Enter your third no : ");
-		int c = sc.nextInt();
-		
-//		int a=100;
-//		int b=20;
-		
-	   int highestNumber = (a>b)? ((a>c)? a:c):((b>c)? b:c);
-	   
-//	   int highestNumber = (a>b) && (a>c)? a: (b>c)? b:c;
-	   
-	   System.out.println("highestNumber "+ highestNumber);
-	   
-		
- 	
+        System.out.println("Enter first number");
+		int a=scannerObject.nextInt();
+        
+		System.out.println("Enter second number");
+        int b=scannerObject.nextInt();
+        
+        System.out.println("Enter third number");
+        int c=scannerObject.nextInt();
+        
+        //find the highest no between the given
+        int  res= ((a>b)&&(a>c))?a:(b > c?b:c);
+        
+    
+        
+      //  int highestNumber=(a>b)? a:b;
+        
+       // int maxnumber=(highestNumber > c) ? highestNumber : c;
+        
+       // System.out.println("Highest Number "+ maxnumber);
+        
+        System.out.println("Highest Number "+res);
 	}
+
+}
+
 
