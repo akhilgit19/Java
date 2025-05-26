@@ -1,0 +1,253 @@
+
+
+Looping statements:
+=======================
+package com.flm.identifiersdemo;
+
+whileloop
+===========
+public class WhileloopDemo {
+
+	public static void main(String[] args) {
+		
+		
+		whileLoopDemo();
+		
+		for(int z=1;z<=3;z++) {
+			System.out.println("Evening");
+		}
+		
+		
+	}
+
+	private static void whileLoopDemo() {
+		int i=5; /// Initialize
+		
+		while(i >= 1) { //Condition
+			System.out.println("Good Morning  "+ i);
+			i--; //Update
+		}
+		
+	   int j=1; /// Initialize
+		
+		while(j<=5) { //Condition
+			System.out.println("Good Evenin  "+ j);
+			j++; //Update
+		}
+		
+		
+		int l=1;
+		while (l<=10) {
+			if(l% 2 == 0) {
+				System.out.println(l);
+			}
+			l++;
+		}
+		
+		int n=95845;
+		int sumOfDigits=0;
+		int temp=95845;
+		
+		while(n>0) {
+			sumOfDigits= sumOfDigits + n%10;
+			n=n/10;
+		}
+	
+	   System.out.println("sumofdigits "+sumOfDigits);
+	   int rem=(temp%9 ==0 ? 9: temp%9);
+	   System.out.println(rem);
+	   
+	   int h =1234;
+	   
+	   int node=0;
+	   
+	   while(h>0) {
+		   h=h/10;
+		   node++;
+		   
+	   }
+
+	   System.out.println("no of digits" +node);
+	}
+}
+
+For Loop:
+=============
+package com.flm.identifiersdemo;
+
+public class ForLoopDemo {
+
+	public static void main(String[] args) {
+		
+		int outerloopvalue =0 ;
+		int innerloopvalue=0;
+		
+		for(int i=1; i<=5;i++) {/// Outer Loop
+	System.out.println(i);
+	outerloopvalue++;
+			for(int j=1; j<=i; j++) {///Inner loop
+				if(j==3) {
+			
+					break;
+				}
+			System.out.println(j);
+			innerloopvalue++;
+				
+			}
+	System.out.println("*********");
+	
+	
+		}
+		System.out.println("outerloopvalue"+outerloopvalue);
+		System.out.println("innerloopvalue"+innerloopvalue);
+	}
+
+	private static void forLoop() {
+		System.out.println("five no using for loop");
+		for(int i=1; i<=5;i++) {
+			System.out.println(i);
+		}
+		
+		System.out.println("five no using for whileloop");
+		int i=1;
+		
+		while(i<=5) {
+			System.out.println(i);
+			i++;
+		}
+		
+		System.out.println(" five no using for dowhileloop");
+		int j=1;
+		
+		do {
+			System.out.println(j);
+			j++;
+		}
+		while(j<=5);
+	}
+}
+
+
+Dowhile loop demo:
+====================
+package com.flm.identifiersdemo;
+
+
+
+public class DoWhileDemo {
+
+	 public static void main(String[] args) {
+	
+		 
+		int i=1;
+		do {
+			System.out.println("inside do while");
+			if(i%2==0) {
+				System.out.println(i);	
+			}
+			i++;
+		}while(i<=10);
+	
+	}
+
+	private static void doWhileLoop() {
+		int i=10;
+		 
+		 do {
+			 System.out.println(i);
+			 i++;
+		 }while(i<5);
+		 
+		 
+		 int j=1;
+		 
+		 while(j<=5) {
+			 System.out.println(j);
+			 j++;
+		 }
+		 
+		 
+
+		 int c=1;
+		 
+		 do {
+			 if(c %2 ==0) {
+				 System.out.println(c);
+			 }
+			 c++;
+		 }while(i<=10);
+	}
+}
+
+
+For loop Demo using break and continue:
+===============================================
+
+package com.flm.identifiersdemo;
+
+public class ForLoopSecondDemo {
+	
+	public static void main(String[] args) {
+		
+		for(int i=1; i<=5; i++) {
+			
+			if(i==3) {
+				continue;
+			}
+			System.out.println(i);
+		}
+	}
+
+}
+
+package com.flm.identifiersdemo;
+
+public class ForLoopSecondDemo {
+	
+	public static void main(String[] args) {
+		
+		for(int i=1; i<=5; i++) {
+			
+			if(i==3) {
+				break;
+			}
+			System.out.println(i);
+		}
+	}
+
+}
+
+Inner and Outer loop using continue in ForLoop:
+==================================================
+package com.flm.identifiersdemo;
+
+public class ForLoopSecondDemo {
+	
+	public static void main(String[] args) {
+		int outerLoop =1;
+		int innerLoop =1;
+		
+		for(int i=1; i<=5; i++) {
+			
+			System.out.println(i);
+			outerLoop++;
+			
+			for(int j=1; j<=i; j++) {
+				
+				if(j==3) {
+					continue;
+				}
+				System.out.println(j);
+				innerLoop++; 
+			}
+			
+			System.out.println("*******");
+			
+		}
+		System.out.println("Outerloop"+outerLoop);
+		System.out.println("InnerLooop"+innerLoop);
+		
+		
+	}
+
+}
