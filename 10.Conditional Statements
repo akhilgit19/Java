@@ -1,0 +1,144 @@
+package com.conditionalstatements.flm;
+
+import java.util.Scanner;
+
+public class ConditionalStatements {
+	
+	public static void main(String[] args) {
+	
+		
+	    switchMethod();
+	}
+
+
+
+	private static void switchMethod() {
+		
+		Scanner scannerObject =new Scanner(System.in);
+			
+		System.out.println("Enter fav day");
+			
+		String favDay=scannerObject .nextLine();
+			
+		switch(favDay){
+		
+		case "Sunday" : {
+			System.out.println("sunday");
+			break;
+		}
+		case "Monday" : {
+			System.out.println("Monday ");
+			break;
+		}
+		case "Tuesday" : {
+			System.out.println("Tueday");
+			break;
+		}
+		case "Wednesday" : {
+			System.out.println("wednesday");
+			break;
+		}
+		case "Thursday" : {
+			System.out.println("Thursday");
+			break;
+		}
+		default : {
+			System.out.println("Every day is same ");
+		}
+	  }
+	}
+	
+	
+	
+	private static void ifElseifStatements() {
+		Scanner scannerOjbect= new Scanner(System.in);
+		System.out.println("Enter your marks");
+		
+		int marks =scannerOjbect.nextInt();
+		
+		if(marks >=90 && marks <=100) {
+			System.out.println("A grade");
+			
+		}
+		else if( marks >=75 && marks <=90){
+			System.out.println("B grade");
+		}
+		else if( marks >=60 && marks <=75) {
+			System.out.println("C grade");
+		}
+		else if( marks > 100) {
+			System.out.println("You have entered wrong marks");
+		}
+		else {
+			System.out.println("Fail");
+		}
+	}
+	
+	
+	private static void ifElseStatementCall() {
+		//int a=101;
+		
+		Scanner scannerObject=new Scanner(System.in);
+		
+		System.out.println("Enter the no:");
+		int a=scannerObject.nextInt();
+		
+		
+		if(a>50){
+			if(a<100) {
+				System.out.println("a is above 50 below 100");
+			}
+			else {
+				System.out.println("Hurray your no is greater than 100");
+			}
+		}
+		else {
+			System.out.println("Oops your no is below 50");
+		}
+	}
+	
+	private static void nestedIF() {
+		int a=75;
+		
+		if(a>50) {
+			if(a<100) {
+				System.out.println("a is above 50 below 100");
+			}
+		}
+	}
+
+
+	private static void scannerEqualMethod() {
+		String su1="akhil";//1102
+		String sp1="123"; //1103
+		
+		Scanner scannerObject=new Scanner(System.in);
+		System.out.println("Please enter Username");
+		String su2= scannerObject.nextLine();//1104
+		System.out.println("Please enter password");
+		String sp2= scannerObject.nextLine();//1106
+		
+		//String su2="akhil"; //1102
+		//String sp2="143";   //1103
+		
+//		boolean userNameMatched= su2==su1;
+//		boolean passwordMatched= sp2==sp2;
+//		
+//		if(userNameMatched && passwordMatched){
+//			System.out.println("Welcome Instagram");
+//		}
+//		
+//	    else {
+//			System.out.println("wrong cred");
+//		}
+		
+		if((su1.equals(su2)) && (sp1.equals(sp2))){
+			System.out.println("Welcome Instagram");
+		}
+		
+	    else {
+			System.out.println("wrong cred");
+		}
+	}
+
+}
