@@ -1,7 +1,3 @@
-
-Arthimetic Operators:
-======================
-
 package com.operators.flm;
 
 import java.util.Scanner;
