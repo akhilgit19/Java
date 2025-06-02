@@ -1,7 +1,3 @@
-
-
-Looping statements:
-=======================
 package com.loopingstatements.flm;
 
 public class LoopingStatements {
@@ -117,5 +113,3 @@ public class LoopingStatements {
 		}
 	}
 }
-
-
