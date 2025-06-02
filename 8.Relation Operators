@@ -1,6 +1,5 @@
 
-Relation Operators:
-======================
+
 package com.operators.flm;
 
 public class relationOperator {
