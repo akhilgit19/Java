@@ -1,105 +1,148 @@
-package com.flm.identifiersdemo;
+package com.primeno.flm;
 
-public class PrimeNumberExample {
+import java.util.Scanner;
+
+public class PrimeNo {
 
 	public static void main(String[] args) {
 		
-		
-		
+		Scanner sc = new Scanner(System.in);
 	
+		//case1 tell the factors for a number
+		System.out.println("Please enter your number to tell how many factors and it is prime or not iterration x sec");
 		
+		int x = sc.nextInt();
 		
+		int factorCount =0;
 		
-	}
-
-	private static void case4() {
-		int x=17;
-		int factorCount=0;
-		
-		for(int i=2;i<=x/2;i++) {
-			if(x%i==0) {
+		for (int i=1; i<=x; i++) {
+			if(x%i == 0) {
 				factorCount++;
+
+			}
+		}
+		
+		if ( factorCount == 2){
+			System.out.println("Yes, Its is prime no: "+x);
+		}
+		else {
+			System.out.println("No, not a prime no"+ x);
+		}
+		
+		System.out.println("Number of factors for your number" +factorCount);
+		
+		//case2 tell if it is a prime if factor equal =2 in the iteration remove 1 factor
+		
+		System.out.println("******case2 tell if it is a prime if factor equal =1 in the iteration x-1 sec");
+		System.out.println("Tell if it is aprime no or not");
+
+		int factorCount2 =0;
+		
+		for (int j=1; j<=x-1; j++) {
+			if(x%j==0) {
+				factorCount2++;
 			}
 			
 		}
 		
-		if(factorCount ==0) {
-			System.out.println("Primeno");
+		if ( factorCount2 == 1){
+			System.out.println("Yes, Its is prime no: "+x);
 		}
 		else {
-			System.out.println("No a prime no");
+			System.out.println("No, not a prime no"+ x);
 		}
-	}
-
-	private static void case3() {
-		int x=17;
-		int factorCount=0;
 		
-		for(int i=2;i<=x-2;i++) {
-			if(x%i==0) {
-				factorCount++;
+		
+		
+	//case3 tell if it is a prime if factor equal =0 in the iteration remove 2 factor
+		
+		System.out.println("****Tell if it is a prime no or not");
+
+		int factorCount3 =0;
+		
+		for (int k=2; k<=x-2; k++) {
+			if(x%k==0) {
+				factorCount3++;
 			}
 			
 		}
-		
-		if(factorCount ==0) {
-			System.out.println("Primeno");
+		System.out.println("****case3 tell if it is a prime if factor equal =0 in the iteration x-2 sec");
+		if ( factorCount3 == 0 ){
+			System.out.println("Yes, Its is prime no: "+x);
 		}
 		else {
-			System.out.println("No a prime no");
+			System.out.println("No, not a prime no"+ x);
 		}
-	}
-
-	private static void case2() {
-		int x=17;
-		int factorCount=0;
 		
-		for(int i=1;i<=x-1;i++) {
-			if(x%i==0) {
-				factorCount++;
+		
+		
+	//case4 tell if it is a prime if factor equal =0 in the iteration remove x/2 factor
+		
+		System.out.println("Tell if it is a prime no or not");
+
+		int factorCount4 =0;
+		
+		for (int l=2; l<=x/2; l++) {
+			if(x%l==0) {
+				factorCount4++;
 			}
 			
 		}
-		
-		if(factorCount ==1) {
-			System.out.println("Primeno");
+		System.out.println("***case4 tell if it is a prime if factor equal =0 in the iteration x/2 sec");
+		if ( factorCount4 == 0 ){
+			System.out.println("Yes, Its is prime no: "+x);
 		}
 		else {
-			System.out.println("No a prime no");
+			System.out.println("No, not a prime no"+ x);
 		}
-	}
-
-	private static void secondMethod() {
-		int x=2;
-		int factorCount=0;
 		
-		for(int i=1;i<=x;i++) {
-			if(x%i==0) {
-				factorCount++;
+		
+		
+	//case5 tell if it is a prime if factor equal =0 in the iteration remove rootx factor
+		
+		System.out.println("Tell if it is a prime no or not");
+
+		int factorCount5 =0;
+		
+		for (int m=2; m<=(int)Math.sqrt(x); m++) {
+			if(x%m==0) {
+				factorCount5++;
 			}
 			
 		}
-		
-		if(factorCount ==2) {
-			System.out.println("Primeno");
+		System.out.println("***case5 tell if it is a prime if factor equal =0 in the iteration x/2 sec");
+		if ( factorCount5 == 0 ){
+			System.out.println("Yes, Its is prime no: "+x);
 		}
 		else {
-			System.out.println("No a prime no");
+			System.out.println("No, not a prime no"+ x);
 		}
 		
-		firstMethod();
-	}
+		
+		
+		
+	//case6 find the prime nos in 1-100
+		
+		System.out.println("Tells if the how many no of primes in 1-100");
+		
+		
+		for (int i = 2; i <= 17; i++) {
+		    boolean isPrime = true;
 
-	private static void firstMethod() {
-		int x=17;
-		
-		for(int i=1;i<=x;i++) {
-			if(x%i==0) {
-				System.out.println("Prime no"+i);
-			}
-			else {
-				System.out.println("Not a prime no"+i);
-			}
+		    // Check if i is divisible by any number from 2 to i-1
+		    for (int j = 2; j < i; j++) {
+		        if (i % j == 0) {
+		            isPrime = false;
+		            break;
+		        }
+		    }
+
+		    if (isPrime) {
+		        System.out.println(i + " is a prime number.");
+		    }
 		}
+		
+		
+		
 	}
 }
