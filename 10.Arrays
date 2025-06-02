@@ -1,73 +1,104 @@
-package com.flm.identifiersdemo;
+package com.arraydemo.flm;
 
-public class Array {
+public class ArrayDemo {
 
 	public static void main(String[] args) {
 		
 		
 		
-		//Interview question confirma a no even or odd without  any conditiona statements
+
+//		evenOrOddWithoutUsingConditionStatments();		
+//		charBasedLoops();	
+//		forEachLoop();	
+//        iterrationOfArrayUsingDoWhile();
+//		iterrationOfArraysUsingWhileLoop();
+//		itterationOfArraysUsingForLoop();
+//		
+//		argsDemo(args);
 		
+	}
+	private static void evenOrOddWithoutUsingConditionStatments() {
+		
+		//x given number is even or odd without using conditional statements
+
 		int x=3;
 		
-		String[] res= {"Even", "Odd"};
-		System.out.println(res[x%2]);
-		
-		
-		int [] marks= {1,10,20,30};
-		
-		System.out.println("forloop");
-        for(int i=0;i<marks.length;i++) {
-        	System.out.println(marks[i]);
-        }
-        
-        System.out.println("doloop");
-        
-        int j=0;
-        
-        do {
-        	System.out.println(marks[j]);
-        	j++;
-        }while(j<marks.length);
-        
-        
-        System.out.println("whileloop");
-        int k=0;
-        
-        while(k<marks.length) {
-        	System.out.println(marks[k]);
-        	k++;
-        }
-        
-        System.out.println("foreach");
-        for(int t : marks) {
-        	System.out.println(t);
-        }
-        
-		
+		String[] result= {"Even","odd"};
+		System.out.println(result[x%2]);
 	}
-
-	private static void arrays2() {
-		String[] ag = {"Updendra","20","true"};
+	private static void charBasedLoops() {
+		char[] initals = {'k','l','m'};
 		
-		System.out.println(ag[0]);
-		System.out.println(ag[1]);
-        System.out.println(ag.length);
+		for(int k=0;k < initals.length; k++) {
+			System.out.println(initals[k]);
+		}
+		
+		for(char c : initals) {
+			System.out.println(c);
+		}
 	}
-
-	private static void arrays() {
-		int [] marks= {1,10,20,30};
+	private static void forEachLoop() {
+		String[] names= {"Ramesh", "Suresh", "Harish"};
+		
+		for (String t : names) {
+			System.out.println(t);
+		}
+	}
+	private static void iterrationOfArrayUsingDoWhile() {
+		String[] names= {"Ramesh", "Suresh", "Harish"};
+		
+		int i=0;
+		do{
+			System.out.println(names[i]);
+			i++;
+		}while(i<names.length);
+	}
+	private static void iterrationOfArraysUsingWhileLoop() {
+		String[] names= {"Ramesh", "Suresh", "Harish"};
+		
+		int i=0;
+		while(i<names.length){
+			System.out.println(names[i]);
+			i++;
+		}
+	}
+	private static void itterationOfArraysUsingForLoop() {
+		int [] marks = {10,20,30,40,60,560,500};
+		
+		for (int i=0; i<marks.length; i+=i+3) {
+			System.out.println(marks[i]);
+		}
+	}
+	private static void argsDemo(String[] args) {
+		System.out.println(args[0]);
+		System.out.println(args[1]);
+		System.out.println(args[2]);
+		System.out.println(args[3]);
+		System.out.println(args[4]);
+		
+		
+		String[] argss= {"updendra"};
+		System.out.println(argss[0]);
+		System.out.println("Siz of arra:" + argss.length);
+	}
+	private static void arraydemo() {
+		int[] marks = {1,10,20,30};//4
+		
+		
+		String[] s = {"vamsi","updendra"};
+		
+		//if arrays is n 0-3 size==> n range always from 0 to N-1
 		
 		System.out.println(marks[0]);
 		System.out.println(marks[1]);
 		System.out.println(marks[2]);
 		System.out.println(marks[3]);
 		
-		
-		
+	
 		int [] b = new int[5];
 		b[0]=99;
-		b[1]=76;
-		System.out.println(b[1]);
+		b[2]=76;
+		
+		System.out.println(b[2]);
 	}
 }
