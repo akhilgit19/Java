@@ -1,48 +1,838 @@
-package com.flm.identifiersdemo;
+package com.problems.flm;
 
-public class PracticeProblems {
-
+public class Problems {
 
 	public static void main(String[] args) {
+
 		
-		
-	 for(int i=1; i<=5; i++) {
-		 
-		 for(int j=1; j<=5; j++) {
-			 System.out.println("*");
+				
+				System.out.println("Pattern 1**********");
+			//1 .// 4 Rows 4 Columns star pattern without any spaces
+//				 * * * *
+//				 * * * *
+//				 * * * *
+//				 * * * *
+				
+				// i =0, j=0  * * * *
+				//       j=1  
+				//       j=2  
+				//       j=3  
+				//       j=4  
+			                
+				// i=1, j=0   * * * *
+				//      j=1
+				//      j=2
+				//      j=3
+				//      j=4
+				
+				// i=2, j=0  * * * *
+				//      j=1
+				//      j=2
+				//      j=3
+				//      j=4
+				
+				// i=3, j=0  * * * *
+				//      j=1
+				//      j=2
+				//      j=3
+				//      j=4
+				
+				//i=4,  j=0  * * * *
+				//      j=1
+				//      j=2
+				//      j=3
+				//      j=4
+				
+				for (int i=0; i<4; i++) {
+					for (int j=0; j<
+							4; j++) {
+						System.out.print(" ");
+						System.out.print("*");
+					}
+					System.out.println();	
+				}
+				
+				System.out.println("Pattern 2**********");
+			//2. //5 rows 5 columns with spaces
+				
+//				 *
+//				 * *
+//				 * * *
+//				 * * * *
+//				 * * * * *
+
+				
+				// i=0, j=0   *  
+			    // i=1, j=0   * *
+				//	    j=1
+			    // i=2, j=0   * * *
+				//      j=1
+				//      j=2
+				// i=3, j=0   * * * *
+			    //      j=1
+			    //      j=2
+				//	    j=3
+				// i=4  j=0   * * * * *
+			    //      j=1
+				//      j=2
+				//      j=3
+				//      j=4  
+				
+				
+				for(int i =0; i<5; i++){
+					
+					for(int j=0; j<=i; j++) {
+						System.out.print(" ");
+						System.out.print("*");
+					}
+						
+				  System.out.println();
+				}
+				
+				System.out.println("Pattern 3**********");
+			//3. 	 // print right angle traingle shape with 5 rows 5 columngs
+				 // with 1-5
+				
+				
+//				 1
+//				 1 2
+//				 1 2 3
+//				 1 2 3 4
+//				 1 2 3 4 5
+				
+				
+				// i=1,  j=1  1
+				// i=2,  j=1  1 2
+				//       j=2
+				// i=3,  j=1  1 2  3
+				//       j=2
+				//       j=3
+				// i=4,  j=1  1 2  3  4
+				//       j=2
+				//       j=3
+				//       j=4
+				// i=5,  j=1  1 2  3  4   5
+				//       j=2
+				//       j=3
+				//       j=4
+				//       j=5
+				for(int i =1; i<=5; i++) {
+					for(int j=1; j<=i;j++) {
+						System.out.print(" ");
+						System.out.print(j);
+					}
+					
+					System.out.println();
+				}
+				
+				System.out.println("Pattern 4**********");
+				
+			//4. //	
+				
+//				Pattern 4**********
+//				 1
+//				 2 2
+//				 3 3 3
+//				 4 4 4 4
+//				 5 5 5 5 5
+				
+				// i=1,  j=1  1
+				// i=2,  j=1  2 2
+				//       j=2
+				// i=3,  j=1  3 3  3
+				//       j=2
+				//       j=3
+				// i=4,  j=1  4 4  4  4
+				//       j=2
+				//       j=3
+				//       j=4
+				// i=5,  j=1  5 5  5  5   5
+				//       j=2
+				//       j=3
+				//       j=4
+				//       j=5
+				for(int i =1; i<=5; i++) {
+					for(int j=1; j<=i;j++) {
+						System.out.print(" ");
+						System.out.print(i);
+					}
+					
+					System.out.println();
+				}
+				
+				
+				System.out.println("Pattern 5**********");
+				
+				//5. 
+				
+//				Pattern 5**********
+//				*****
+//				****
+//				***
+//				**
+//				*
+//				
+				// i=1,  j=1     *****
+		        //		 j=2
+		        //       j=3		
+		        //		 j=4
+				//       j=5
+				         
+				// i=2,  j=1     ****
+				//       j=2
+				//       j=3
+				//       j=4
+				
+				// i=3,  j=1     ***
+				//       j=2
+				//       j=3
+				// i=4,  j=1     **
+				//       j=2
+				// i=5,  j=1     *
+				
+				
+				
+				for(int i=1;i<=5;i++) {
+					for(int j=5-1+1; j>=i; j--) {
+						System.out.print("*");
+					}
+					System.out.println();
+				}
+				
+//				6.pattern
+				
+//				54321
+//				5432
+//				543
+//				54
+//				5
+//				
+				
+				// i=1,  j=1     54321
+		        //		 j=2
+		        //       j=3		
+		        //		 j=4
+				//       j=5
+				         
+				// i=2,  j=1     5432
+				//       j=2
+				//       j=3
+				//       j=4
+				
+				// i=3,  j=1     543
+				//       j=2
+				//       j=3
+				// i=4,  j=1     54
+				//       j=2
+				// i=5,  j=1     5
+				
+				for(int i=1; i<=5; i++) {
+					for(int j=5-1+1; j>=i;j--) {
+						System.out.print(j);
+					}
+					System.out.println();
+				}
+				
+				
+				
+//				12345
+//				1234
+//				123
+//				12
+//				1
+//				
+				
+				
+				// i=1,  j=1     12345
+		        //		 j=2
+		        //       j=3		
+		        //		 j=4
+				//       j=5
+				         
+				// i=2,  j=1     1234
+				//       j=2
+				//       j=3
+				//       j=4
+				
+				// i=3,  j=1     123
+				//       j=2
+				//       j=3
+				// i=4,  j=1     12
+				//       j=2
+				// i=5,  j=1     1
+				for(int i=1; i<=5; i++) {
+					for(int j=1; j<=5-i+1;j++) {
+						System.out.print(j);
+					}
+					System.out.println();
+				}
+				
+//				   n-i-1 2*i+1  n-i-1
+//			0	// 1 - 4 1 4
+//			1	// 2 - 3 3 3
+//			2	// 3 - 2 5 2
+//			3	// 4-  1 7 1
+//			4	// 5-  0 9 0
+				
+//			     *    
+//			    ***   
+//			   *****  
+//			  ******* 
+//			 *********
 			 
-		 }
-		 System.out.println();
-	 }
-	 
-		
-	}
+				for(int i=0; i<5; i++) {
+					
+					for(int j=0; j<5-i-1; j++) {
+						System.out.print(" ");
+					}
+						
+					for(int j=0; j<2*i+1; j++) {
+						System.out.print("*");
+					}
+					
+					for(int j=0; j<5-i-1; j++) {
+						System.out.print(" ");
+					}
+					
+					System.out.println();
+				}
+				
+				
+//				     i  2n-2i-1 i
+//			0	// 1 - 0 9 0  i =0, j=0   j=
+//			1	// 2 - 1 7 1
+//			2	// 3 - 2 5 2
+//			3	// 4-  3 3 3
+//			4	// 5-  4 1 4
+				
+				
+//				*********
+//				 ******* 
+//				  *****  
+//				   ***   
+//				    *    
+//				    
+				
 
-	private static void reverseOfNumber() {
-		int num =1234;
-		
-		int rev=0;
-		
-		while(num>0) {
+				 int n=5;
+				for(int i=0; i<5; i++) {
+					
+					for(int j=0; j<i; j++) {
+						System.out.print(" ");
+					}
+						
+					for(int j=0; j<2*n-2*i-1; j++) {
+						System.out.print("*");
+					}
+					
+					for(int j=0; j<i; j++) {
+						System.out.print(" ");
+					}
+					
+					System.out.println();
+				}
+				
+				
+				
+				
+				
+		    
+//			    *    
+//			   ***   
+//			  *****  
+//			 ******* 
+//			*********
+//			*********
+//			 ******* 
+//			  *****  
+//			   ***   
+//			    *    
+				
+		           for(int i=0; i<5; i++) {
+					
+					for(int j=0; j<5-i-1; j++) {
+						System.out.print(" ");
+					}
+						
+					for(int j=0; j<2*i+1; j++) {
+						System.out.print("*");
+					}
+					
+					for(int j=0; j<5-i-1; j++) {
+						System.out.print(" ");
+					}
+					
+					System.out.println();
+				}
+		           
+		           
+		          
+		   		for(int i=0; i<5; i++) {
+		   			
+		   			for(int j=0; j<i; j++) {
+		   				System.out.print(" ");
+		   			}
+		   				
+		   			for(int j=0; j<2*n-2*i-1; j++) {
+		   				System.out.print("*");
+		   			}
+		   			
+		   			for(int j=0; j<i; j++) {
+		   				System.out.print(" ");
+		   			}
+		   			
+		   			System.out.println();
+		   		}
+		   		
+		   		
+//		   		*
+//		   		**
+//		   		***
+//		   		****
+//		   		*****
+//		   		****
+//		   		***
+//		   		**
+//		   		*
+
+		   		
+		   		// i =1 j=1   j=i
+		   		// i=2  j=1   
+		   		//      j=2
+		   		// i=3  j=1
+		   		//      j=2
+		   		//      j=3
+		   		// i=4  j=1
+		   		//      j=2
+		   		//      j=3
+		   		//      j=4
+		   		//i=5   j=1
+		   		//      j=2
+		   		//      j=3
+		   		//      j=4
+		   		//      j=5
+		   		//i=6   j=1   j=(2n-i)
+		   		//      j=2   
+		   		//      j=3
+		   		//      j=4
+		   		//i=7   j=1
+		   		//      j=2
+		   		//      j=3
+		   		//i=8   j=1
+		   		//      j=2
+		   		//i=9   j=1
+		   		
+		   		
+		   		
+		   		for (int i=1; i<=2*n-1; i++) {
+		   			int stars;
+		   			if(i>n) {
+//		   				stars = 2*n-i;
+		   				for (int j=1; j<=2*n-i; j++) {
+		   	   				System.out.print("*");
+		   	   			 }
+		   			}else
+		   			
+		   			for (int j=1; j<=i; j++) {
+		   				System.out.print("*");
+		   			}
+		   			
+		   			System.out.println();
+			}
+
+		   		
+//		   		
+//		   		1
+//		   		01
+//		   		101
+//		   		0101
+//		   		10101
+		   		
+		   		for(int i=0; i<n; i++) {
+		   			int start =1;
+		   			
+		   			if( i%2 ==0) {
+							start =1;
+							
+						}else {
+							start =0;
+						}
+		   					for(int j=0; j<=i; j++) {
+		   						
+		   					 System.out.print(start);
+		                     start= 1-start;
+		   						
+		   					}
+		   			
+		   			System.out.println();
+		   		}
+		   		
+		   		
+		  
+//		   		
+//		   		1      1
+//		   		12    12
+//		   		123  123
+//		   		12341234
+		   		
+		   		
+		   		//  1      1  6   1
+		   		//  2      2  4   2
+		   		//  3      3  2   3 
+		   		//  4      4  0   4   
+		   		
+//		   		2*4 -2*1
+//		   		8-2
+//		   		6
+//		   		2*4 -2*2
+//		   		8-4
+//		   		4
+//		   		2*4 -2*3
+//		   		8-6
+//		   		2
+//		   		2*4 -2*4
+//		   		8-8
+//		   		0
+		   		
+		   		
+		   		
+		   		
+		   		for(int i=1; i<=4; i++) {
+		   			
+		   			for(int j=1; j<=i; j++) {
+		   				System.out.print(j);
+		   			}
+		   			for(int j=1; j<=2*4 -2*i; j++) {
+		   				System.out.print(" ");
+		   			}
+		   			
+		   			for(int j=1; j<=i; j++) {
+		   				System.out.print(j);
+		   			}
+		   			System.out.println();
+		   		}
+		   		
+		   		
+//		   		1
+//		   		23
+//		   		456
+//		   		78910
+//		   		1112131415
+		   		
+		   		int num=1;
+		   		
+		   		for(int i=1; i<=n; i++) {
+		   		
+		   			for(int j=1; j<=i; j++) {
+		   				
+		   				System.out.print(num);
+		   				num = num +1;
+		   				
+		   			}
+		   			
+		   			System.out.println();
+		   		}
+		   		
+		   		
+		   	
 			
-			rev = rev*10 + num%10;
-			num=num/10;
-		}
-		
-		System.out.println(rev);
+		   		
+//		   		AB
+//		   		ABC
+//		   		ABCD
+//		   		ABCDE
+//		   		ABCDEF
+		   		for(int i=1; i<=n; i++) {
+		   		
+		   			for(char ch ='A'; ch<= 'A'+i; ch++) {
+		   				
+		   		
+		   				System.out.print(ch);
+
+		   			}
+		   			
+		   			System.out.println();
+		   		}
+//		   		
+//		   		5-1+1
+//		   		4-1+1
+		   		
+//		   		
+//		   		ABCDE
+//		   		ABCD
+//		   		ABC
+//		   		AB
+//		   		A
+		   		
+				for(int i=0; i<n; i++) {
+					for(char ch='A'; ch<= 'A'+(n-i-1); ch++) {
+						System.out.print(ch);
+					}
+					System.out.println();
+				}
+		 
+				
+//				A
+//				BB
+//				CCC
+//				DDDD
+//				EEEEE
+				
+				for(int i=0; i<n; i++) {
+					
+					char ch =(char)('A'+i);
+					for(int j=0; j<=i; j++) {
+						System.out.print(ch);
+					}
+					System.out.println();
+				}
+		   		
+//			     A    
+//			    ABA   
+//			   ABCBA  
+//			  ABCDCBA 
+//			 ABCDEDCBA	
+//				
+			for(int i=0; i<5; i++) {
+					
+					for(int j=0; j<n-i-1; j++) {
+						System.out.print(" ");
+					}
+						
+					char ch ='A';
+					int breakpoint =(2*i+1)/2;
+					
+					for(int j=1; j<=2*i+1; j++) {
+						System.out.print(ch);
+					    if(j <= breakpoint) {
+					    	ch++;
+					    }else {
+					    	ch--;
+					    }
+					}
+					
+					for(int j=0; j<n-i-1; j++) {
+						System.out.print(" ");
+					}
+					
+					System.out.println();
+				}
+			
+			
+			
+			
+		//	
+//			E
+//			DE
+//			CDE
+//			BCDE
+//			ABCDE
+
+			
+			
+			for(int i=0; i<n; i++) {
+			
+				for(char ch =(char) ('E'-i); ch<='E'; ch++) {
+				
+					System.out.print(ch);
+					
+				}
+				
+				System.out.println();
+			}
+			
+			
+		 
+		//	
+//			**********
+//			****  ****
+//			***    ***
+//			**      **
+//			*        *
+//			*        *
+//			**      **
+//			***    ***
+//			****  ****
+//			**********
+
+			int space =0;
+		   	for(int i  =0; i<n; i++) {
+		   		//stars
+		   		
+		   		for(int j =1; j<=n-i; j++) {
+		   			System.out.print("*");
+		   		}
+		   		//spaces
+		   		for(int j =1; j<=space; j++) {
+		   			System.out.print(" ");
+		   		}
+		   		//stars
+		   		for(int j =1; j<=n-i; j++) {
+		   			System.out.print("*");
+		   		}
+		   		space+=2;
+		   		System.out.println();
+		   	}
+
+		   	space = 2*n-2;
+		   	for(int i=1; i<=n; i++) {
+		   		
+		   		for(int j =1; j<=i; j++) {
+		   			System.out.print("*");
+		   		}
+		   		//spaces
+		   		for(int j =1; j<=space; j++) {
+		   			System.out.print(" ");
+		   		}
+		   		//stars
+		   		for(int j =1; j<=i; j++) {
+		   			System.out.print("*");
+		   		}
+		   		space-=2;
+		   		System.out.println();
+		  
+		   	}
+		   	
+		   	
+		   	
+		   	   int spaces= 2*n-2;
+				for (int i=1; i<=2*n-1; i++) {
+		   			int stars =i ;
+		   			if(i>n) {
+		   				 stars = 2*n-i;
+//		   				for (int j=1; j<=2*n-i; j++) {
+//		   	   				System.out.print("*");
+//		   	   			 }
+		   			}
+		   			
+		   			
+		   			
+		   			
+//		   			*        *
+//		   			**      **
+//		   			***    ***
+//		   			****  ****
+//		   			**********
+//		   			****  ****
+//		   			***    ***
+//		   			**      **
+//		   			*        *
+		   			
+		   			for (int j=1; j<=stars; j++) {
+		   				System.out.print("*");
+		   			}
+		   			
+		   			for (int j=1; j<=spaces; j++) {
+		   				System.out.print(" ");
+		   			}
+		   			
+		   			for (int j=1; j<=stars; j++) {
+		   				System.out.print("*");
+		   			}
+		   			System.out.println();
+		   			
+		   			if (i<n) {
+		   				spaces -=2;
+		   			}
+		   			else {
+		   				spaces+=2;
+		   			}
+			}
+		   	
+				
+				
+//				*****
+//				*   *
+//				*   *
+//				*   *
+//				*****
+//				
+				
+				for(int i=0 ; i<n; i++) {
+					for(int j=0; j<n; j++) {
+						if (i==0 || i == n-1 || j==0 || j==n-1) {
+							System.out.print("*");
+						}
+						else {
+							System.out.print(" ");
+						}
+					}
+					System.out.println();
+				}
+
+   	
+//   	5 5 5 5 5 5 5 5 5 
+//   	5 4 4 4 4 4 4 4 5 
+//   	5 4 3 3 3 3 3 4 5 
+//   	5 4 3 2 2 2 3 4 5 
+//   	5 4 3 2 1 2 3 4 5 
+//   	5 4 3 2 2 2 3 4 5 
+//   	5 4 3 3 3 3 3 4 5 
+//   	5 4 4 4 4 4 4 4 5 
+//   	5 5 5 5 5 5 5 5 5 
+
+   	
+   	for (int i = 0; i <= 2 * n - 2; i++) {
+   	    for (int j = 0; j <= 2 * n - 2; j++) {
+   	        int top = i;
+   	        int left = j;
+   	        int right = (2 * n - 2) - j;
+   	        int down = (2 * n - 2) - i;
+   	        
+   	        // Compute minimum distance to any edge
+   	        int minDistance = Math.min(Math.min(top, down), Math.min(left, right));
+   	        
+   	        // Print value with space
+   	        System.out.print((n - minDistance) + " ");
+   	    }
+   	    // Print new line after each row
+   	    System.out.println();
+   	    
+   	}
+   	
 	}
 
-	private static void noOfDigits() {
+	private static void noOfDigitsSumOfDigitsReverseOfDigits() {
 		//no of digits in a number
-		
-		int xinputNumber=1234;
+		int x=1234;
 		int y=0;
+
 		
-		while(xinputNumber > 0) {
-			xinputNumber=xinputNumber/10;
+		while(x>0) {
+			x =x/10;
 			y++;
 		}
+		System.out.println("no of digits in a num"+y);
 		
-		System.out.println(y);
+		
+		// Sum of digits in a number
+		
+		int z= 1234;
+		int sumOfDigits=0;
+		
+		
+		while(z>0) {
+			sumOfDigits= sumOfDigits + z%10;
+			z=z/10;
+		}
+			
+		System.out.println(sumOfDigits);
+		
+		// Reverse of a digit
+		
+		int num =1234;
+		int rev =0;//4
+		
+		while(num >0) {  
+			int rem = num%10; 
+			rev = rev *10 +rem;
+			num=num/10;
+		}
+		System.out.println(rev);
 	}
+	
+	
+		
+		
+	
 }
