@@ -1,3 +1,7 @@
+Identifier:
+--------------
+A name in java program is called identifier. it may be classs name,method name and variable name.
+
 package com.identifiers.flm;
 
 public class Identifiers {
