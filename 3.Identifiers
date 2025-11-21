@@ -5,7 +5,7 @@ public class Identifiers {
 	public static void main(String[] args) {
 		System.out.println("Identifiers");
 		
-		
+
 		int x=10;
 		
 		int a2 =256;
@@ -17,7 +17,22 @@ public class Identifiers {
 		int nUMber=20;
 		
          System.out.println("A is ="+A);
+         System.out.println("a2 is ="+a2);
+         System.out.println("Number is ="+Number);
+         System.out.println("NUMBER is ="+NUMBER);
+         System.out.println("nUMber is ="+nUMber);
+         
          
          
 	}
 }
+
+
+Solution:
+
+Identifiers
+A is =260
+a2 is =256
+Number is =20
+NUMBER is =20
+nUMber is =20
