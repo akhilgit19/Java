@@ -2,7 +2,7 @@
 Scanner:
 ==============
 
-package com.scanner.flm;
+package com4.scanner.flm;
 
 import java.util.Scanner;
 
@@ -10,6 +10,24 @@ public class ScannerDemo {
 
 	public static void main(String[] args) {
 		
+	Scanner scannerObject = new Scanner(System.in);
+	
+	System.out.println("Enter your first name");
+	
+	String firstName = scannerObject.nextLine();
+	
+	System.out.println("Enter your last name");
+
+	String lastName = scannerObject.nextLine();
+	
+	System.out.println(firstName+lastName);
+	}
+	
+
+//	stringCharMethod();
+//	
+
+	private static void stringCharMethod() {
 		Scanner scannerObject = new Scanner(System.in)  ;
 		System.out.println("Please enter a string value");
 		String str = scannerObject.nextLine();
@@ -22,8 +40,6 @@ public class ScannerDemo {
 		System.out.println("char0 "+char0);
 		System.out.println("char1 "+char1);
 		System.out.println("char2 "+char2);
-	
-
 	}
 	
 //	dataTypesUsingScanner();
