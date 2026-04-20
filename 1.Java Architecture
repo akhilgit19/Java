@@ -17,11 +17,67 @@
 2)HELLO.JAVA ----COMPILIER-->HELLO.CLASS(BYTE  code which is neither machine or understandable code and platform independent)-- Machine-- interpreter intepretes line by   line in the machine.
 
 
-3)public class HelloWorld{
+3)
 
-public static void main(String[] args) {
-   System.out.println("Hello World!!!");
-}
+
+package com1.flm.HelloWorldPackage;
+
+import java.io.PrintStream;
+
+public class HelloWorld {
+	
+	/**
+	 * 1) In Java,To run a method without objects,
+	 *  we will use static, So all static methods doesn't not require
+	 *  objects.
+	 *  
+	 *  2) void will not return anything 
+	 *  
+	 *  3) public is access granter, so as it is public it can be
+	 *     used by any
+	 *     
+	 *  4) Here in the below main metod you have another
+	 *   
+	 *    object calling method reference.
+	 *    
+	 *    
+	 *     Class system
+	 *     
+	 *     public static final PrintStream out = null;
+	 *     
+	 *     
+	 *     
+	 *     PrintStream out = null;
+	 *     System.out.println.("")
+	 * 
+	 * 
+	 *     /**
+     * Prints a String and then terminate the line.  This method behaves as
+     * though it invokes {@link #print(String)} and then
+     * {@link #println()}.
+     *
+     * @param x  The {@code String} to be printed.
+     * 
+     *  public void println(String x) {
+        if (getClass() == PrintStream.class) {
+            writeln(String.valueOf(x));
+        } else {
+            synchronized (this) {
+                print(x);
+                newLine();
+            }
+        }
+    }
+    
+    
+     */
+   
+		
+	public static void main(String[] args) {
+		
+		System.out.println("Hello World");
+	}
+
 }
 
 
@@ -34,16 +90,20 @@ akhilpagadapoola@Akhils-MacBook-Air Documents % javac HelloWorld.java
 akhilpagadapoola@Akhils-MacBook-Air Documents % java HelloWorld
 Hello World!!!
 
-
+JDK,JRE,JVM:
+=================
 4) JDK- JAVA DEVELOPMENT KIT- JDK is combinatioon of JRE and Dev tools-java compilier, java debugger, java doc
 5) JRE- JAVA RUNTIME ENVIRONMENT- JRE is combination of JVM + Runtime libraries
 6) JVM- JAVA VIRTUAL MACHINE- Class loader subystem+ Memory segement+ Exeuction Engine+ Java native interface and java native libraries
 
+JVM ARCHITECTURE
+===================:
                  (jdk --compiler)                         JVM+JRE
-7)HelloWorld.java----------->HelloWorld.class (bytecode)------------> INPUT TO JVM---->CLASSLOADER---METHOD AREA,HEAP AREA,Stack Memory,Program Counter------------>(Execution Engine)--->interpreter(reads code line by line--> JIT (Just in time compiler) IF repeated methods it quickly compile-- Garbage collector----JNI(Java Native interface).
+7)HelloWorld.java----------->HelloWorld.class (bytecode)------------> INPUT TO JVM Memory---->CLASSLOADER---METHOD AREA,HEAP AREA,Stack Memory,Program Counter------------>(Execution Engine)--->interpreter(reads code line by line--> JIT (Just in time compiler) IF repeated methods it quickly compile-- Garbage collector----JNI(Java Native interface).
 
 Jvm memory:
------------
+=============
+Class loader- loads the .calss files into Jvm and verifies the code
 METHOD AREA - contains class data
 HEAP AREA-- contains objects
 STACK MEMORY- Local variables are stores in stack memory
@@ -55,3 +115,11 @@ InterviewQuestion Note:
 =========================
 1.You can compile a java code without a main method.
 2.You cannot run a java code without a main method.
+
+Here is the error you will get if you run without main method:
+
+Error: Main method not found in class HelloWorld, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
