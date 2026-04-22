@@ -36,10 +36,11 @@ public class HelloWorld {
 	 *  3) public is access granter, so as it is public it can be
 	 *     used by any
 	 *     
-	 *  4) Here in the below main metod you have another
+	 *  4) Here in the below main method you have another
 	 *   
-	 *    object calling method reference.
+	 *      object calling method reference.
 	 *    
+	 *    Explanation of  System.out.println("Hello World")
 	 *    
 	 *     Class system
 	 *     
@@ -48,6 +49,7 @@ public class HelloWorld {
 	 *     
 	 *     
 	 *     PrintStream out = null;
+	 *     
 	 *     System.out.println.("")
 	 * 
 	 * 
