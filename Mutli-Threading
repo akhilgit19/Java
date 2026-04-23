@@ -1,0 +1,185 @@
+Mutli Thread Demo:
+
+package com.flm.multithreading;
+
+
+public class MultiThreadingDemo {
+	
+	
+	
+	
+	public static void main(String[] args) {
+	
+		
+		MyThread mt2 = new MyThread();
+		mt2.start();
+		
+		
+		MyThirdThread mt3 = new MyThirdThread();
+		Thread t3 = new Thread(mt3);
+		t3.start();
+		
+		
+		Thread Threadinformation = Thread.currentThread();
+		 int priority = Threadinformation.getPriority();
+		 Threadinformation.setPriority(10);
+		 
+		 String threadName = Threadinformation.getName();
+		 
+		
+		for(int i =0; i<=10; i++) {
+			
+			System.out.println("Hello"+i+ threadName+ priority);
+		}
+		 
+		
+		 
+	}
+	
+	
+	
+	/**
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * In Java there 2 ways we can create a thread
+	 * 
+	 * 
+	 * 1) Extending Thread Class
+	 * 
+	 * 2) Implementing Runnable Interference
+	 * 
+	 * 
+	 * - By default when you run a main method, A main thread will
+	 *   be executed.
+	 * 
+	 * - Second thread will be extends from thread and need to
+	 *   ovverride the run method and should be initiated/called by 
+	 *   start method
+	 *   
+	 * -   In Thread class we have current thread method which returns thread object
+//        public static native Thread currentThread();
+//        
+//      - You cannot predict, Multi-Threading output.
+ *      -  Thread Scheduler decides which thread to run , and how much time to thread
+ *      -
+ *      -
+ *      -By Default a thread priority is 5
+ *      -Thread priority ranges form 1-10
+ *      - 1- Min
+ *      - 10 Max
+ *      - 5- avg - default priroty for a thread
+ *      - We can set the prirotiy for a thread but still it is not guranteed Thread
+ *        scheduler will allocate CPU for the that thread
+ *      
+ *      
+ *      set priority method in Thread Class which is instance method
+ *      public final void setPriority(int newPriority) 
+ *      
+	 * 
+	 * 
+	 * - Third thread is a runnable object which takes runnable input
+	 *  
+	 *  public Thread(Runnable target, String name)
+	 */
+	
+	
+
+}
+
+MyThirdThread:
+
+
+package com.flm.multithreading;
+
+public class MyThirdThread  implements Runnable {
+	
+	
+	
+	@Override
+	public void run() {
+	
+		
+		 Thread Threadinformation = Thread.currentThread();
+		 int priority = Threadinformation.getPriority();
+		 Threadinformation.setPriority(10);
+		 
+		 
+		 String threadName = Threadinformation.getName();
+		 
+
+		for(int i=1; i<=10; i++) {
+			
+			System.out.println("bye"+i +threadName + priority);
+		}
+		
+	}
+	
+	
+	
+
+}
+
+
+MyThread:
+
+package com.flm.multithreading;
+
+public class MyThread extends Thread{
+	
+	
+	@Override 
+	public void run(){
+		
+		
+		Thread MyThreadinformation = Thread.currentThread();
+		int priority = MyThreadinformation.getPriority();
+		
+		MyThreadinformation.setPriority(5);
+		
+		
+		 String threadName = MyThreadinformation.getName();
+		 
+		for(int i =1; i<=10; i++) {
+			
+			
+			System.out.println("hi"+i+ threadName +  priority);
+		}
+	}
+	
+	
+	/**
+	 * 
+	 * 
+	 * 	public class Thread implements Runnable 
+	
+	
+	Causes this thread to begin execution; the Java Virtual Machine
+    * calls the {@code run} method of this thread.
+    * <p>
+    * The result is that two threads are running concurrently: the
+    * current thread (which returns from the call to the
+    * {@code start} method) and the other thread (which executes its
+    * {@code run} method).
+    * <p>
+    * It is never legal to start a thread more than once.
+    * In particular, a thread may not be restarted once it has completed
+    * execution.
+    *
+    * @throws     IllegalThreadStateException  if the thread was already started.
+    * @see        #run()
+    * @see        #stop()
+    * public synchronized void start()--------- instance method needs object
+    
+    
+    
+	 */
+	
+}
+
