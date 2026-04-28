@@ -2,41 +2,143 @@ Identifier:
 --------------
 A name in java program is called identifier. it may be classs name,method name and variable name.
 
-package com.identifiers.flm;
+package com3.flm.identifersanddatatypes;
 
-public class Identifiers {
+public class IdentifiersAndDataTypes {
 
+	
 	public static void main(String[] args) {
-		System.out.println("Identifiers");
 		
-
-		int x=10;
 		
-		int a2 =256;
+//Identifers is a name which is variable class methods		
 		
-		int A=260;
+	 /** Alloowed characters
+	  * 
+	  *  a to z
+	  *  A TO Z
+	  *  0 TO 9
+	  *  _(underscore)
+	  *  $
+	  *  
+	  *  Java is case sensitive int a is different from int A
+	  */
 		
-		int Number=20;
-		int NUMBER=20; //case sensitive 
-		int nUMber=20;
 		
-         System.out.println("A is ="+A);
-         System.out.println("a2 is ="+a2);
-         System.out.println("Number is ="+Number);
-         System.out.println("NUMBER is ="+NUMBER);
-         System.out.println("nUMber is ="+nUMber);
-         
-         
-         
+		int x=10;//valid
+		
+	//	int 2a = 230;//invalid
+		
+		int total_number=120;//valid
+		
+	//	int Total#=30;//invalid
+		
+		int a1=5; //valid
+		int A=5;  //valid
+		
+		System.out.println(a1);
+		System.out.println(A);
+		
+		
+		int String= 9;//invalid reserve key words should not be used 
+		
+	//	int if =10;//invalid
+		
+	
+		
+		/** 
+		 * Data types-8
+		 * 
+		 * 1. Numeric
+		 *     - Integer
+		 *        - byte
+		 *        -  short
+		 *        -  int
+		 *        - long  
+		 *      - float
+		 *        - float
+		 *        - double
+		 * 2.Char
+		 *     - String
+		 *        group of char
+		 *     
+		 * 3. Boolean
+		 */
+		
+	
+		
+		/**
+		 *  byte  size-1 byte range =-128 to127
+		 *  
+		 *  short size-2 bytes range= -32768 to 3267)
+		 *  
+		 *  int  size-4 bytes range= -2147483648 to 2147483647)
+		 *  
+		 *  long size- 8 bytes range =- 2^63 to 2^63 -1
+		 *  
+		 *  float size 4 bytes  range =-3.4e38 to 3.4e38 
+		 *  
+		 *  double size -8 bytes range = -1.7e308 to 1.7e308 
+		 *  
+		 *  boolean size= not applicable range nNA
+		 *  
+		 *  char size = 2bytes  range= 9-65535
+		 *  
+		 * ****imp String is class in java derived data
+		 * 
+		 * 
+		 * primitive data types are fundamental data types
+		 * non primitive data types are not fundamental data types
+		 * derived data types which are derived from basic data types
+		 * 
+		 * 
+		 * By default  java.lang; is by default get imported.
+		 * 
+		 * String class is in java.util
+		 * 
+		 * 
+		 */ 
+		
+		//integral data types
+		byte b =127; 
+		short s =12999;
+		int i =1299999999; //preferred 
+		long l=899999999; 
+		
+		//decimal values
+		float f=12.3888888888888888888888888f;
+		double d =123.458687677777777777777777777;//preferred
+		
+		//boolean
+		
+		boolean k =true;
+		boolean k2=false;
+		
+		
+		//char
+		char c='A';
+		char c1=65;
+		
+		String name ="Updendra";
+		
+		System.out.println("Byte value is "+b);
+		System.out.println("Short value is "+s);
+		System.out.println("int  value is "+i);
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println("long value is "+l);
+		System.out.println("float value is "+f);
+		System.out.println("double value is "+d);
+		
+		System.out.println("boolean value is "+k);
+		System.out.println("boolean value is "+k2);
+		
+		System.out.println("character value is "+c+c1);
+		
+		System.out.println("String is class in java derived data "+ name);
+		
+		
+		
+		
+		
 	}
 }
 
-
-Solution:
-
-Identifiers
-A is =260
-a2 is =256
-Number is =20
-NUMBER is =20
-nUMber is =20
