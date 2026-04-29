@@ -183,3 +183,107 @@ public class MyThread extends Thread{
 	
 }
 
+
+
+package com.flm.multithreading;
+
+public class A {
+
+	public static void main(String[] args) throws InterruptedException  {
+		
+		
+		B b= new B();
+		b.start();
+		
+		
+		C c = new C();
+		
+		Thread td = new Thread(c);
+		td.start();
+		
+		
+		for(int i=1; i<=10; i++) {
+//			Thread.sleep(5);
+			System.out.println("Hi" + Thread.currentThread().getName());
+		}
+		
+	
+	}
+}
+
+
+class B extends Thread {
+	
+	
+	public void run() {
+		
+		for(int i=1; i<=10; i++) {
+//		    try {
+//				Thread.sleep(100);
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+			System.out.println("Hello"+Thread.currentThread().getName());
+		}
+	}
+}
+
+
+class C implements Runnable{
+
+	@Override
+	public void run() {
+		
+		for(int i=1; i<=10; i++) {
+			//				Thread.sleep(30);
+			Thread.yield();
+			System.out.println("bye"+Thread.currentThread().getName());
+		}
+		
+	}
+	
+	
+}
+
+
+
+/**
+ *  3 methods to stop the thread execution
+ *  -----------------------------------------
+ *  - Thread.sleep
+ *  - Thread.yield
+ *  - join
+ * 
+ *  Lifycycle of Thread
+ *  ---------------------
+ *  - New stage
+ *  -   |----------t.start()
+ *  - Ready to run stage--- Thread scheduler   wait to invoke run mehtod
+ *  - running stage --- t.sleep
+ *  - if we give sleep it will go into hold state, Thread.sleep, it was currenthreadh
+ *    to wait state or hold state for the specified no of milliseconds
+ *    
+ *  - dead state
+ * 
+ */
+
+
+/**
+ * A hint to the scheduler that the current thread is willing to yield
+ * its current use of a processor. The scheduler is free to ignore this
+ * hint.
+ *
+ * <p> Yield is a heuristic attempt to improve relative progression
+ * between threads that would otherwise over-utilise a CPU. Its use
+ * should be combined with detailed profiling and benchmarking to
+ * ensure that it actually has the desired effect.
+ *
+ * <p> It is rarely appropriate to use this method. It may be useful
+ * for debugging or testing purposes, where it may help to reproduce
+ * bugs due to race conditions. It may also be useful when designing
+ * concurrency control constructs such as the ones in the
+ * {@link java.util.concurrent.locks} package.
+ */
+//public static native void yield();
+
