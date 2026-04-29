@@ -1,0 +1,156 @@
+package com.flm.throwsandthrow;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class ThrowsDemo {
+	
+	
+	/**
+	 * 
+	 * 
+	 * 
+	 * Throws 
+	 * -  Bypassing exception from present method to caller method
+	 * -  if no caller handles, JVM will take care of the exception
+	 * 
+	 * User also can raise exceptoin manully in program
+	 * that is throw e
+	 * 
+	 */
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		
+		ThrowsDemo td = new ThrowsDemo();
+		td.ramesh();
+		
+	}
+	
+	void ramesh() throws FileNotFoundException  {
+		this.suresh();
+	}
+	
+	void suresh() throws FileNotFoundException  {
+		
+		
+		
+		
+		try {		
+			this.harish();
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	}
+	
+	void harish() throws FileNotFoundException  {
+		
+		
+		FileInputStream fis = new FileInputStream("hello.txt");
+		
+//		try {
+//			FileInputStream fis = new FileInputStream("hello.txt");
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+		
+	}
+
+}
+
+
+
+package com.flm.throwsandthrow;
+
+import java.util.Scanner;
+
+public class ThrowDemo {
+	
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Welcome to utu bank");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			int minBal = sc.nextInt();
+			if(minBal < 1000) {
+//				throw new IllegalArgumentException("Min Bal should be greater than 100");//predefined exceptions
+//			
+				throw new MiniumBalanceException("Min Bal should be greater than 100"); //custom exceptions
+				
+			}
+	
+	
+		}catch(Exception e){
+			System.out.println("Something is wrong");
+			System.out.println(e.getMessage());
+	
+		}
+	}
+
+}
+
+
+
+package com.flm.throwsandthrow;
+
+public class MiniumBalanceException extends Exception {
+	
+	
+	
+	MiniumBalanceException(String errorMsg){
+		super(errorMsg);
+	}
+}
+
+
+
+/**
+ * Constructs a new exception with the specified detail message.  The
+ * cause is not initialized, and may subsequently be initialized by
+ * a call to {@link #initCause}.
+ *
+ * @param   message   the detail message. The detail message is saved for
+ *          later retrieval by the {@link #getMessage()} method.
+ */
+//public Exception(String message) {
+//    super(message);
+//}
+
+
+/**
+ * Constructs a new throwable with the specified detail message.  The
+ * cause is not initialized, and may subsequently be initialized by
+ * a call to {@link #initCause}.
+ *
+ * <p>The {@link #fillInStackTrace()} method is called to initialize
+ * the stack trace data in the newly created throwable.
+ *
+ * @param   message   the detail message. The detail message is saved for
+ *          later retrieval by the {@link #getMessage()} method.
+ */
+//public Throwable(String message) {
+//    fillInStackTrace();
+//    detailMessage = message;
+//}
+
+
+/**
+ * Specific details about the Throwable.  For example, for
+ * {@code FileNotFoundException}, this contains the name of
+ * the file that could not be found.
+ *
+ * @serial
+ */
+//private String detailMessage; -- this is in Throwable
+
+
+
+
