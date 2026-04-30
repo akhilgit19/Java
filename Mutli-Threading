@@ -1,4 +1,96 @@
-Mutli Thread Demo:
+package com.flm.multithreading;
+
+
+public class MultiThreadingDemo {
+	
+	
+	
+	
+	public static void main(String[] args) {
+	
+		
+		MyThread mt2 = new MyThread();
+		mt2.start();
+		
+		
+		MyThirdThread mt3 = new MyThirdThread();
+		Thread t3 = new Thread(mt3);
+		t3.start();
+		
+		
+		Thread Threadinformation = Thread.currentThread();
+		 int priority = Threadinformation.getPriority();
+		 Threadinformation.setPriority(10);
+		 
+		 String threadName = Threadinformation.getName();
+		 
+		
+		for(int i =0; i<=10; i++) {
+			
+			System.out.println("Hello"+i+ threadName+ priority);
+		}
+		 
+		
+		 
+	}
+	
+	
+	
+	/**
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * In Java there 2 ways we can create a thread
+	 * 
+	 * 
+	 * 1) Extending Thread Class
+	 * 
+	 * 2) Implementing Runnable Interference
+	 * 
+	 * 
+	 * - By default when you run a main method, A main thread will
+	 *   be executed.
+	 * 
+	 * - Second thread will be extends from thread and need to
+	 *   override the run method and should be initiated/called by 
+	 *   start method
+	 *   
+	 * -   In Thread class we have current thread method which returns thread object
+//        public static native Thread currentThread();
+//        
+//      - You cannot predict, Multi-Threading output.
+ *      -  Thread Scheduler decides which thread to run , and how much time to thread
+ *      -
+ *      -
+ *      -By Default a thread priority is 5
+ *      -Thread priority ranges form 1-10
+ *      - 1- Min
+ *      - 10 Max
+ *      - 5- avg - default priroty for a thread
+ *      - We can set the prirotiy for a thread but still it is not guranteed Thread
+ *        scheduler will allocate CPU for the that thread
+ *      
+ *      
+ *      set priority method in Thread Class which is instance method
+ *      public final void setPriority(int newPriority) 
+ *      
+	 * 
+	 * 
+	 * - Third thread is a runnable object which takes runnable input
+	 *  
+	 *  public Thread(Runnable target, String name)
+	 */
+	
+	
+
+}
+
 
 package com.flm.multithreading;
 
@@ -60,7 +152,7 @@ public class MultiThreadingDemo {
 	 *   be executed.
 	 * 
 	 * - Second thread will be extends from thread and need to
-	 *   ovverride the run method and should be initiated/called by 
+	 *   override the run method and should be initiated/called by 
 	 *   start method
 	 *   
 	 * -   In Thread class we have current thread method which returns thread object
@@ -93,41 +185,6 @@ public class MultiThreadingDemo {
 
 }
 
-MyThirdThread:
-
-
-package com.flm.multithreading;
-
-public class MyThirdThread  implements Runnable {
-	
-	
-	
-	@Override
-	public void run() {
-	
-		
-		 Thread Threadinformation = Thread.currentThread();
-		 int priority = Threadinformation.getPriority();
-		 Threadinformation.setPriority(10);
-		 
-		 
-		 String threadName = Threadinformation.getName();
-		 
-
-		for(int i=1; i<=10; i++) {
-			
-			System.out.println("bye"+i +threadName + priority);
-		}
-		
-	}
-	
-	
-	
-
-}
-
-
-MyThread:
 
 package com.flm.multithreading;
 
@@ -184,10 +241,175 @@ public class MyThread extends Thread{
 }
 
 
+package com.flm.multithreading;
+
+public class SyncDemo {
+
+	public static void main(String[] args) {
+		
+		DisplayInfo di = new DisplayInfo();
+		GoodMorning gm = new GoodMorning();
+	    
+		
+		gm.displayinfo=di;
+		gm.start();
+		
+		GoodEvening ge = new GoodEvening();
+		ge.displayinfo=di;
+		ge.start();
+		
+		
+	
+		
+	
+	}
+}
+
+
+class GoodMorning extends Thread{
+	
+	DisplayInfo displayinfo;
+	
+	@Override
+	public void run() {
+		
+		displayinfo.displayMessage("Good Morning", 5);
+		
+	}
+}
+
+
+
+class GoodEvening extends Thread{
+	
+	DisplayInfo displayinfo;
+	
+	@Override
+	public void run() {
+		
+		displayinfo.displayMessage("Good evening", 5);
+		
+	}
+}
+
+
+
+class DisplayInfo{
+	
+	void displayMessage(String message, int count) {
+		
+		
+		synchronized (this) {
+			
+			for(int i =1; i<=count; i++) {
+				System.out.println(message + i);
+			}
+		}
+	}
+	
+
+	
+//	synchronized void displayMessage(String message, int count) {
+//		for(int i =1; i<=count; i++) {
+//			System.out.println(message + i
+//					);
+//		}
+//	}
+}
+
+
+/**
+ * In order to stop multiple methods accessing same thread 
+ * we applys syncronized keyword
+ */
+
+
 
 package com.flm.multithreading;
 
-public class A {
+public class ThreadJoin {
+	
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+		
+		/**
+		 * 
+		 * Instance variable can be 
+		 * initialized by 4 way
+		 *  at the time of decclearation
+		 *  object reference
+		 *  with help of constructors
+		 *  getand setters
+		 *  
+		 */
+		
+		JD3 jd3Object = new JD3();
+		
+		JD2 jd2 = new JD2();
+	    jd2.jd3= jd3Object;// object reference initialiazation
+	    
+	    jd3Object.start();
+	  
+		jd2.start();
+		
+		jd2.join();
+		
+		
+		
+
+		
+		System.out.println("S3-Parsing data from files to save to DB");
+		
+	
+		
+	}
+
+}
+
+
+class JD2 extends Thread {
+	
+	
+	JD3 jd3;//null //isntance variable
+	
+	@Override
+	public void run() {
+		try {
+			jd3.join();
+			System.out.println("S2-Connecting to AWS-S3 to read files");
+		} catch( NullPointerException ne) {
+			ne.printStackTrace();
+		}
+		catch (InterruptedException e ) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+
+	}
+	
+}
+
+class JD3 extends Thread{
+	
+	@Override
+	public void run() {
+		
+		
+		System.out.println("S1-Fetch credentials from filestore");
+
+	}
+	
+}
+
+
+
+
+package com.flm.multithreading;
+
+public class ThreadSleepThreadYieldDemo {
 
 	public static void main(String[] args) throws InterruptedException  {
 		
@@ -286,4 +508,5 @@ class C implements Runnable{
  * {@link java.util.concurrent.locks} package.
  */
 //public static native void yield();
+
 
