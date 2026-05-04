@@ -1,7 +1,3 @@
-Identifier:
---------------
-A name in java program is called identifier. it may be classs name,method name and variable name.
-
 package com3.flm.identifersanddatatypes;
 
 public class IdentifiersAndDataTypes {
@@ -141,4 +137,3 @@ public class IdentifiersAndDataTypes {
 		
 	}
 }
-
