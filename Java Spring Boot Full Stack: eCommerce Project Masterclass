@@ -23,3 +23,217 @@ MacOS
 https://download.oracle.com/java/26/latest/jdk-26_macos-aarch64_bin.dmg (sha256)
 - start the installation
 - now give java --version in the terminal
+
+
+
+Linux
+-
+- Click on below link
+x64 Debian Package	180.82 MB	
+https://download.oracle.com/java/26/latest/jdk-26_linux-x64_bin.deb (sha256)
+
+- pwd
+- cd Downloads/
+- sudo dpkg -i jdk-26_linux-x64_bin.deb
+
+
+Internet 
+- Interne is a global netowrk of computers
+  connected
+
+Web
+- World wide web is accesing of infomration 
+  over the medium of web
+
+
+
+Client:
+================
+
+
+client -----Request-------> Webserver
+client <-----Response------- Webserver
+
+www.domainname.com----->IP addresss
+
+- a device or application that request services or resources 
+  from a server
+- a client is typically a web browser that user interact with
+  to access web pages
+- a client can also be other type of software like an email client or
+  a  mobile app
+
+Characteristic of a client
+===============================
+- User Interface
+- Request Services
+- recives data
+
+
+Server
+======
+
+- A device or application that provides
+  services or resources to clients
+- A server is designed to handle request
+  from multiple clients
+- a server host websites and respond to request
+
+- always on
+- Handles Multiple Data
+- Sends Data
+Example
+- Web browsing
+- Email
+
+
+API
+======
+
+Application Programming Interface
+
+- customer -- application
+- kitchen -- another system service
+- menu -- api specifications
+- waiter- api
+- food- response
+
+
+
+Webpp Browser---------Request/Response---APIServever----Database
+
+Api's
+- Private 
+- Partner
+- Public
+
+Types of Aqi REQUESTS
+-----------------------
+
+- Get Request
+ - Retrive or Get resource from server
+ - used only to read data
+
+- Post Request
+  - Create resources from server
+
+- Put Request
+  - Update existing resources on Server
+
+- Delete Request
+  - Used to Delete resources from Server
+
+
+
+Rest API and its Architecture
+======================================
+
+-Representation State Transfer Application Porogramming Interface
+-REST is stateless
+
+
+Principles of Rest api
+========================
+- Client server Arhitecture
+- Stateless
+- can be cached
+- opaque in terms of layers
+
+
+
+
+HTTPS and HTTPS
+========================
+
+- Both HTTP and HTTPS are protocols designed for  trasferring t hyppertex
+  across the world wide web
+- They operate based on a client server model, where a client(web browser)
+   sends a request to the server hosting a website
+- Both protocols use similar methods to perform actiosn on the  wwebserver as 
+  well as status codes
+- HTTPS and HTTPS are both stateless protocols, meaning they do not inherently
+  remember anything about the previous web sessin
+- Both HTTP and HTTPS can transefer data in various fromats including HTML,
+  XML,JSON and plain text
+
+
+
+Classification of Status Codes:
+-----------------------------------
+- 1xx( Informational)
+- 2xx( Sucessful)
+- 3XX( Redirectiosn)
+- 4XX( Client Error)
+
+-- 200 -- OK
+-- 201 -- Created
+-- 301- Moved permanently
+-- 400- Bad Request
+--401- Unauthorixed
+--403 Forbidden
+-404 Not found
+
+
+
+Resource 
+- is any piece of information that can be named or identified on the web
+- Can represent any type of object ,datat, or service that can be accessed by clients
+- A resource is not just limited to documents or files: it can be anthing form a text file,
+  an image a collection of other resources  a non virtual object liek a person
+   and even abstract concepts like a service
+- In a social media application resources could include a user profile, a photo
+  list of firends or even a specific post or commen.
+
+URI- Uniform Resource Identifier
+
+- A URI  is a string of character used to indentifiy a resource on the internet either by lcoation ,name or both
+- It provides mechanism for accessing the representation of a resource over the netowrk, typically through 
+  specific protocls such as https or https
+
+- URI are a broad category that includes both URLS(Uniform Resource Locators) and URN( Uniform Resource Names)
+
+
+
+Sub Resource;
+- A sub resource is a resouce that is hierarhicaoly under another resourse
+- its part of a larger resource and can be acessed by extending the URL  OF TH EPARENT RESOURCE
+- Sub resources are often used in RESTful API to maintain a logical 
+  hierarchi of data and to faciliate each access to related resources.
+
+- Example- In a bloggin platform, you might have a users resources identified by a URI
+  A speciific user could be a resource acessible at/users/{usersid}
+- if each user can have blog posts, a post would be a sub-resource of that user,
+  identified by something liek /users/{userid}/posts/{postid}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
