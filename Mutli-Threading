@@ -94,92 +94,29 @@ public class MultiThreadingDemo {
 
 package com.flm.multithreading;
 
-
-public class MultiThreadingDemo {
+public class MyThirdThread  implements Runnable {
 	
 	
 	
+	@Override
+	public void run() {
 	
-	public static void main(String[] args) {
-	
 		
-		MyThread mt2 = new MyThread();
-		mt2.start();
-		
-		
-		MyThirdThread mt3 = new MyThirdThread();
-		Thread t3 = new Thread(mt3);
-		t3.start();
-		
-		
-		Thread Threadinformation = Thread.currentThread();
+		 Thread Threadinformation = Thread.currentThread();
 		 int priority = Threadinformation.getPriority();
 		 Threadinformation.setPriority(10);
 		 
+		 
 		 String threadName = Threadinformation.getName();
 		 
-		
-		for(int i =0; i<=10; i++) {
+
+		for(int i=1; i<=10; i++) {
 			
-			System.out.println("Hello"+i+ threadName+ priority);
+			System.out.println("bye"+i +threadName + priority);
 		}
-		 
 		
-		 
 	}
 	
-	
-	
-	/**
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * In Java there 2 ways we can create a thread
-	 * 
-	 * 
-	 * 1) Extending Thread Class
-	 * 
-	 * 2) Implementing Runnable Interference
-	 * 
-	 * 
-	 * - By default when you run a main method, A main thread will
-	 *   be executed.
-	 * 
-	 * - Second thread will be extends from thread and need to
-	 *   override the run method and should be initiated/called by 
-	 *   start method
-	 *   
-	 * -   In Thread class we have current thread method which returns thread object
-//        public static native Thread currentThread();
-//        
-//      - You cannot predict, Multi-Threading output.
- *      -  Thread Scheduler decides which thread to run , and how much time to thread
- *      -
- *      -
- *      -By Default a thread priority is 5
- *      -Thread priority ranges form 1-10
- *      - 1- Min
- *      - 10 Max
- *      - 5- avg - default priroty for a thread
- *      - We can set the prirotiy for a thread but still it is not guranteed Thread
- *        scheduler will allocate CPU for the that thread
- *      
- *      
- *      set priority method in Thread Class which is instance method
- *      public final void setPriority(int newPriority) 
- *      
-	 * 
-	 * 
-	 * - Third thread is a runnable object which takes runnable input
-	 *  
-	 *  public Thread(Runnable target, String name)
-	 */
 	
 	
 
@@ -239,6 +176,7 @@ public class MyThread extends Thread{
 	 */
 	
 }
+
 
 
 package com.flm.multithreading;
@@ -305,6 +243,10 @@ class DisplayInfo{
 				System.out.println(message + i);
 			}
 		}
+		
+		for(int i =1; i<=10; i++) {
+			System.out.println("Hello" + i);
+		}
 	}
 	
 
@@ -322,6 +264,90 @@ class DisplayInfo{
  * In order to stop multiple methods accessing same thread 
  * we applys syncronized keyword
  */
+
+
+
+package com.flm.multithreading;
+
+public class SynchronizationWaitNotify {
+
+	
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+		T2 t = new T2();
+		t.start();
+
+		synchronized(t) {
+			t.wait();
+			System.out.println("sum of 100 nos is "+t.sum);
+		}
+		
+		
+//		try {
+//			t.join();
+//			
+//			System.out.println("sum of 100 nos is "+t.sum);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+	
+	
+		
+		
+		
+	}
+	
+	
+	/**
+	 * 
+	 * Instance variable can be 
+	 * initialized by 4 way
+	 *  at the time of decclearation
+	 *  object reference
+	 *  with help of constructors
+	 *  getand setters
+	 *  
+	 */
+	
+	
+	/**
+	 * 
+	 * 
+	 *  new objcect----start()------Ready to start-- Thread scheuler---Run---dead
+	 *                                                                   |
+	 *                                                non runnable---- wait/join/yield/sleep 
+	 */
+}
+
+
+class T2 extends Thread {
+	
+	int sum;
+	
+	public void run() {
+		
+		synchronized (this) {
+			
+			for(int i =1; i<=100; i++) {
+				sum+=i;
+			}
+			this.notify();
+		}
+		
+	
+		
+		
+		for(int i =1; i<=5; i++) {
+			
+			System.out.println("Hello Good Morning"+i);
+		}
+
+		
+	}
+}
 
 
 
@@ -403,7 +429,6 @@ class JD3 extends Thread{
 	}
 	
 }
-
 
 
 
