@@ -1,39 +1,29 @@
+package com2.flm.javastructure;
 
-Packaging is for better  organization:
-============================================
-
-
-package com.flm; //optional
-
-import java.util;// on demand
-
-class HelloWorld {
-//var
-//methods: set of instructions
-//constructor
-//blocks
-
-}
+import java.util.*;
 
 
-public static void main(String args []){
-
-}
-
-public- Access specifier
-static- keyword
-void- return type
-main- method name
-String args[] - Array of string type
 
 
-package com.fls;
+public class JavaCodeStructure {
 
-public class B {
+
 	public static void main(String[] args) {
-		System.out.println("B");
 		
-		System.out.println("C");
+		//var
+		//methods: set of instructions
+		//constructor
+		//blocks
+		
 	}
-
+	/**
+	 * public - Access specifier
+	 * static - keyword
+	 * void- return type
+	 * main-= method name
+	 * String args[]- Array of string type
+	 * 
+	 * 
+	 */
+	
 }
