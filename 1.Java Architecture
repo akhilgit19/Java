@@ -14,6 +14,8 @@
 1)WHO WILL TRANSLATE SYSTEM TO MACHINE LEVEL?
   -COMPILER + INTERPRETER.
 
+ - Java has best in backward compatablity
+
 2)HELLO.JAVA ----COMPILIER-->HELLO.CLASS(BYTE  code which is neither machine or understandable code and platform independent)-- Machine-- interpreter intepretes line by   line in the machine.
 
 
