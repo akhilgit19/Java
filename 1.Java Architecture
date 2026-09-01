@@ -10,13 +10,13 @@ public class JavaIntroduction {
 //1.  1,2,3,4---x==> 2 fc----> x sec
 //2.  2,3,4,----x===> 1 fc --> x-1 sec
 //3.  2,3,4-----x-1 ====> 0 fc ---> x-2 sec
-//4.   100 -> 50   1--------x/2-----------x  ===> x/2 sec
-//     50 >   25
-//     10 >   5
-//     x  >  x/2
+//4.  For 100 -> highest factor is 50   1--------x/2-----------x  ===> x/2 sec
+//    For 50 >  highes factor is  25
+//    For 10 >  highest factor is 5
+//    For  x  >  highest factor is x/2
 //
-//5. 1,2,3,5,6,20,15,30 ----->ROOT X secs
-//
+//5. 1,2,3,5,|| 6,20,15,30 ----->ROOT X secs
+//  if no exist left half of root x then there will be right of half of rootx
 //
 //1)WHO WILL TRANSLATE SYSTEM TO MACHINE LEVEL?
 //  -COMPILER + INTERPRETER.
@@ -99,16 +99,31 @@ public class JavaIntroduction {
 //akhilpagadapoola@Akhils-MacBook-Air Documents % java HelloWorld
 //Hello World!!!
 //
+
+
+Featurs of java
+=================
+
+Platform independed
+Object-oriendted
+Strong-typed language it is not dynamically typed as python
+Automatic memory management
+Multithreaded
+
 //JDK,JRE,JVM:
 //=================
 //4) JDK- JAVA DEVELOPMENT KIT- JDK is combinatioon of JRE and Dev tools-java compilier, java debugger, java doc
 //5) JRE- JAVA RUNTIME ENVIRONMENT- JRE is combination of JVM + Runtime libraries
 //6) JVM- JAVA VIRTUAL MACHINE- Class loader subystem+ Memory segement+ Exeuction Engine+ Java native interface and java native libraries
 //
+
 //JVM ARCHITECTURE
 //===================:
 //                 (jdk --compiler)                         JVM+JRE
-//7)HelloWorld.java----------->HelloWorld.class (bytecode)------------> INPUT TO JVM Memory---->CLASSLOADER---METHOD AREA,HEAP AREA,Stack Memory,Program Counter------------>(Execution Engine)--->interpreter(reads code line by line--> JIT (Just in time compiler) IF repeated methods it quickly compile-- Garbage collector----JNI(Java Native interface).
+//7)HelloWorld.java----------->HelloWorld.class (bytecode)/(platoform independent)/(Backwardcompatable)/(WORA)------------> 
+                      INPUT TO JVM Memory---->CLASSLOADER---METHOD AREA,HEAP AREA,Stack Memory,Program Counter------------>
+                  (Execution Engine)--->interpreter(reads code line by line--> JIT (Just in time compiler) IF repeated methods it quickly compile--
+                   Garbage collector----JNI(Java Native interface).
 //
 //Jvm memory:
 //=============
@@ -130,72 +145,3 @@ public class JavaIntroduction {
 //Error: Main method not found in class HelloWorld, please define the main method as:
 //   public static void main(String[] args)
 //or a JavaFX application class must extend javafx.application.Application
-
-
-
-
-package com1.flm.HelloWorldPackage;
-
-import java.io.PrintStream;
-
-public class HelloWorld {
-
-	public static void main(String[] args) {
-
-		System.out.println("Hello World");
-	}
-
-	
-	
-	/*
-	 * 
-	 *   package PackageName;
-	     import packageNamel
-	     class ClassNamel
-	     variable
-	     method/constructors
-	     main method(){
-	     execution of code
-	 * 
-	 */
-
-
-	
-	/**
-	 * 1) In Java,To run a method without objects, we will use static, So all static
-	 * methods doesn't not require objects.
-	 * 
-	 * 2) void will not return anything
-	 * 
-	 * 3) public is access granter, so as it is public it can be used by any
-	 * 
-	 * 4) Here in the below main method you have another
-	 * 
-	 * object calling method reference.
-	 * 
-	 * Explanation of System.out.println("Hello World")
-	 * 
-	 * Class system
-	 * 
-	 * public static final PrintStream out = null;
-	 * 
-	 * 
-	 * 
-	 * PrintStream out = null;
-	 * 
-	 * System.out.println.("")
-	 * 
-	 * 
-	 * /** Prints a String and then terminate the line. This method behaves as
-	 * though it invokes {@link #print(String)} and then {@link #println()}.
-	 *
-	 * @param x The {@code String} to be printed.
-	 * 
-	 *          public void println(String x) { if (getClass() == PrintStream.class)
-	 *          { writeln(String.valueOf(x)); } else { synchronized (this) {
-	 *          print(x); newLine(); } } }
-	 * 
-	 * 
-	 */
-
-}
