@@ -209,6 +209,33 @@ Sub Resource;
 
 
 
+Core Concepts Of Spring Frame Work | Java Web Developemnt
+========================================================
+
+Losse Coupling
+==============
+is a desing principle that aims to reduce the dependecies betwwen
+components within a system
+
+
+Inversion of Control(IOC)
+===============================
+
+Inversion of Control is a desing principle where the control of 
+object creation and lifecyle managmenet is transferred from the application
+code to an external container or framework
+
+Dependency Injection [DI]
+============================
+Dependency injection is a design pattern commonly  used in
+object-oriented programming,where the dependecies of a classa are
+provided externally  rather than being created within the class itself
+
+
+Beans
+==========
+objects that are managed by frameworks are knows as beans
+
 
 
 
