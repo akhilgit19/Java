@@ -206,7 +206,12 @@ Sub Resource;
 - if each user can have blog posts, a post would be a sub-resource of that user,
   identified by something liek /users/{userid}/posts/{postid}
 
-
+Popular Web Frameworks
+springboot(java)
+django(pythong)
+flask(python)
+Express( java script)
+Ruby on Rails(Ruby)
 
 
 Core Concepts Of Spring Frame Work | Java Web Developemnt
