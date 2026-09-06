@@ -10,11 +10,19 @@ public class JavaCodeStructure {
 
 	public static void main(String[] args) {
 		
-		//var
-		//methods: set of instructions
-		//constructor
-		//blocks
-		
+	
+	/*
+	 * 
+	 *   package PackageName;
+	     import packageNamel
+	     class ClassNamel
+	     variable
+	     method/constructors
+	     main method(){
+	     execution of code
+	 * 
+	 */
+
 	}
 	/**
 	 * public - Access specifier
@@ -26,4 +34,42 @@ public class JavaCodeStructure {
 	 * 
 	 */
 	
+}
+/**
+	 * 1) In Java,To run a method without objects, we will use static, So all static
+	 * methods doesn't not require objects.
+	 * 
+	 * 2) void will not return anything
+	 * 
+	 * 3) public is access granter, so as it is public it can be used by any
+	 * 
+	 * 4) Here in the below main method you have another
+	 * 
+	 * object calling method reference.
+	 * 
+	 * Explanation of System.out.println("Hello World")
+	 * 
+	 * Class system
+	 * 
+	 * public static final PrintStream out = null;
+	 * 
+	 * 
+	 * 
+	 * PrintStream out = null;
+	 * 
+	 * System.out.println.("")
+	 * 
+	 * 
+	 * /** Prints a String and then terminate the line. This method behaves as
+	 * though it invokes {@link #print(String)} and then {@link #println()}.
+	 *
+	 * @param x The {@code String} to be printed.
+	 * 
+	 *          public void println(String x) { if (getClass() == PrintStream.class)
+	 *          { writeln(String.valueOf(x)); } else { synchronized (this) {
+	 *          print(x); newLine(); } } }
+	 * 
+	 * 
+	 */
+
 }
