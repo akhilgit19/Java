@@ -243,6 +243,21 @@ objects that are managed by frameworks are knows as beans
 
 
 
+Spring Container and Configuration
+===========================================
+
+lify cuyle management of objects
+
+Types of Spring containers
+- Application context
+- Bean factory
+
+
+
+
+spring container-- configuration file(defines which obcst ar suppose to managed)
+
+configuration containers bean defintion
 
 
 
